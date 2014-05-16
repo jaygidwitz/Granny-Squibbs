@@ -1,5 +1,5 @@
 /*
-	Theme Name: Squibbs
+	Theme Name: Squibbs (PD dev version)
 	Theme URI: http://studioissa.com/
 	Description: A mobile responsive and HTML5 theme.
 	Author: Studio Issa
@@ -98,6 +98,11 @@ input[type="search"] {
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
 }
+
+/* SCSS Plugins
+--------------------------------------------- */
+@import 'bower_components/animate.scss/scss/animate';
+
 
 /* Float Clearing
 --------------------------------------------- */
@@ -753,13 +758,9 @@ body.single-post .entry-header::after {
 .wpseo-map-canvas {
 	margin-top: 60px;
 	height: 450px !important;
+	opacity: 0;
 }
-/*
-.wpseo-map-canvas *,
-.wpseo-map-canvas *:before,
-.wpseo-map-canvas *:after {
-    -webkit-transform: none !important; 
-}*/
+
 
 #wpseo-storelocator-form p label {
 	clear: left;
