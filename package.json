@@ -1,0 +1,25 @@
+{
+  "name": "Granny-Squibbs",
+  "version": "0.0.0",
+  "description": "http://my.studiopress.com/themes/parallax/",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaygidwitz/Granny-Squibbs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaygidwitz/Granny-Squibbs/issues"
+  },
+  "homepage": "https://github.com/jaygidwitz/Granny-Squibbs",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sftp-deploy": "0.0.11",
+    "grunt-contrib-sass": "~0.7.3"
+  }
+}
