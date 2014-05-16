@@ -1016,6 +1016,61 @@ div.gform_wrapper .gform_footer input[type=submit] {
 	padding: 20px;
 }
 
+
+div.homeboxes {
+	width: 31.333333333333336%;
+	float: left;	
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+	overflow: hidden;
+	position: relative;
+	height: 414px;
+	margin: 0 1%;
+}
+
+.boxleft,
+a .boxleft {
+	background-color: #b2deee;
+	color: white;
+}
+
+.boxleft p {
+	padding: 18px 24px;
+}
+
+.boxleft:hover {
+	background-color:#68a7bd
+}
+
+.boxcenter {
+	background: url(http://squibbs.wpengine.com/wp-content/uploads/2014/04/squibbwreck.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #b2deee;
+}
+
+.boxcenter:hover {
+	background-color:#68a7bd
+}
+
+.boxright {
+	background: url('http://squibbs.wpengine.com/wp-content/uploads/2014/04/grannysquibbs-2.jpg');
+	background-color: #b2deee;
+}
+
+.boxright:hover {
+	background: url('http://squibbs.wpengine.com/wp-content/uploads/2014/04/grannysquibbs-2.jpg') center bottom;
+	transition: none;
+	background-color:#68a7bd
+}
+
 /* Jetpack
 --------------------------------------------- */
 
