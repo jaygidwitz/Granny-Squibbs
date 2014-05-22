@@ -1,0 +1,22 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js"></script>
+<script>
+(function removeFlashing($){
+
+	$(document).ready(function(){
+
+		$grid = $('.gridfx');
+
+		$grid.find('img').each(function(){
+			var oldSource = $(this).attr('src');
+			var srcPos    =  oldSource.indexOf('src=') + 4;
+			$(this).attr('src', oldSource.substring(srcPos, oldSource.length))
+		})
+
+		$grid.imagesLoaded(function(){
+			$grid.addClass('animated fade-up-in');
+		});
+
+	});
+
+})(jQuery);	
+</script>
