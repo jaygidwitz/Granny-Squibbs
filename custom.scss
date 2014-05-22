@@ -799,12 +799,12 @@ table.adp-placemark tbody tr td img.adp-marker {
 	float: left;
 	position: relative;
 	top: -200px;
-}
+	opacity: 0;
 
-#wpseo-storelocator-results h2,
-#wpseo-storelocator-results h3 {
-	font-size: 20px;
-	margin: 20px 0 5px;
+	h2, h3 {
+		font-size: 20px;
+		margin: 20px 0 5px;
+	}
 }
 
 .wpseo-location {

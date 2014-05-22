@@ -1,16 +1,20 @@
 (function fixMapDisplay($){
 
-	var checker = setInterval(function(){
+	function checkAndFadeIn (selector, childSelector) {
+		var checker = setInterval(function(){
 
-		var $mapCanvas = $('#map_canvas');
-		
-		if ($mapCanvas.find('.gm-style').length > 0) {
+			var $selector = $(selector);
 
-			$mapCanvas.addClass('animated fade-up-in');
+			if ($selector.find(childSelector).length > 0) {
 
-			clearInterval(checker);
-		}
+				$selector.addClass('animated fade-up-in');
+				clearInterval(checker);
+			}
 
-	}, 1000);
+		}, 1000);
+	}
 
+	checkAndFadeIn('#map_canvas','.gm-style');
+	checkAndFadeIn('#wpseo-storelocator-results','.wpseo-result');
+	
 })(jQuery);
