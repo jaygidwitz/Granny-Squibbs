@@ -2610,14 +2610,10 @@ Footer Widgets
 	background: url('http://squibbs.wpengine.com/wp-content/themes/squibbs/images/waves-v2.7.png');
 	height: 40px;
 	width: 100%;
+	&.sticky-bottom {
+		position: absolute;
+	}
 }
-
-/*.site-inner:after {
-	background: url('http://squibbs.wpengine.com/wp-content/themes/squibbs/images/waves-2.png');
-	height: 60px;
-	width: 100%;
-	background-color: none;
-}*/
 
 .site-inner:after {
 	background: bottom url('http://squibbs.wpengine.com/wp-content/themes/squibbs/images/waves-2.png');
@@ -2635,6 +2631,11 @@ Site Footer
 	border-top: 4px solid #8abbe4;
 	text-transform: uppercase;
 	font-size: 13px;
+
+	&.sticky-bottom {
+		position: absolute;
+		width: 100%;
+	}
 }
 
 .site-footer .aligncenter {
