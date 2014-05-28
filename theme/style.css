@@ -7449,33 +7449,61 @@ body.home.page footer.site-footer .wrap {
 .recipes .food {
   height: 444px;
   width: 555px;
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs/images/recipes-food.jpg") center top;
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-food.jpg") center;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   transition: none;
+  background-attachment: inherit;
+	background-color: #fff;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 
 .recipes .food:hover {
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs/images/recipes-food.jpg") center bottom;
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-food-2.jpg") center;
   transition: none;
+    background-attachment: inherit;
+	background-color: #fff;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 
 .recipes .drinks {
   height: 444px;
   width: 555px;
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs/images/recipes-drinks.jpg") center top;
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-drinks.jpg") center;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   transition: none;
+  background-attachment: inherit;
+	background-color: #fff;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 
 .recipes .drinks:hover {
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs/images/recipes-drinks.jpg") center bottom;
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-drinks-2.jpg") center;
   transition: none;
+    background-attachment: inherit;
+	background-color: #fff;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 
 .soliloquy-container .soliloquy-caption {
@@ -7502,6 +7530,13 @@ body.home.page footer.site-footer .wrap {
   margin-left: 25px !important;
   margin-bottom: 10px !important;
 }
+
+
+article.post-4 h2 {
+	max-width: 1140px;
+	margin: 0 auto;
+	}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .soliloquy-container .soliloquy-caption {
