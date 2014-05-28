@@ -4457,7 +4457,7 @@ body.single-post {
 }
 
 body.single-post main.content {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   float: none;
 }
@@ -4472,12 +4472,25 @@ body.page-id-2 {
 	background: url('http://squibbs.wpengine.com/wp-content/uploads/2014/04/beach.jpg') no-repeat center center fixed;
 	background-size: cover;
 }*/
-body.page-id-2 .full-width-content .content {
+body.page-id-2 .full-width-content .content,
+.breadcrumb {
   padding: 0;
   width: 100%;
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 100%;
   float: none;
+}
+
+body.page-id-9 .breadcrumb {
+	padding: 10px 0;
+}
+
+body.page-id-9 section#text-12 div.widget-wrap {
+	max-width: 100%;
+}
+
+body.page-id-5 div.content-sidebar-wrap {
+	margin: 0 20px;
 }
 
 body.page-id-7 .site-inner,
@@ -4491,7 +4504,8 @@ body.page-id-2 main.content {
   background: white;
 }
 
-body.page-id-2 article {
+body.page-id-2 article,
+body.page-id-39 main.content {
   max-width: 1140px;
   margin: 0px auto 40px;
   float: none;
@@ -4693,24 +4707,30 @@ input[type="radio"] {
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background-color: #757575;
-  border: none;
   color: #fff;
   cursor: pointer;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 1px;
-  padding: 20px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
+	padding: 10px 18px;
+	border: 3px solid #fcca76;
+	clear: left;
+	color: #002b5c;
+	background-color: #fcca76;
+	border-color: #fcca76;
 }
+
+
 
 input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"] {
-  background-color: #f04848;
-  color: #fff;
+  	background-color: #fcca76;
+	border-color: #fcca76;
+	color: #002b5c;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -4762,7 +4782,7 @@ div.one-half a.button:hover,
   color: #fff;
 }
 
-.home-section-4 a.button {
+/*.home-section-4 a.button {
   border: 3px solid #333;
   color: #333;
 }
@@ -4771,7 +4791,25 @@ div.one-half a.button:hover,
   color: #666;
   background-color: #fff;
   border: 3px solid #666;
+}*/
+
+
+.home-section-4 a.button {
+	font-size: 18px;
+	padding: 10px 18px;
+	border: 3px solid #002b5c;
+	clear: left;
+	color: #002b5c;
 }
+
+.home-section-4 a.button:hover {
+	background-color: #fcca76;
+	border-color: #fcca76;
+	color: #002b5c;
+	
+}
+
+
 
 .fbx-stage a.button {
   padding: 15px 50px !important;
@@ -4817,13 +4855,13 @@ Structure and Layout
 .site-inner,
 .wrap {
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 100%;
 }
 
 .site-inner {
   clear: both;
   /*	margin-top: 140px;*/
-  margin-top: 78px;
+  margin-top: 70px;
 }
 
 .parallax-home .site-inner {
@@ -4931,14 +4969,28 @@ Common Classes
 /* Genesis
 --------------------------------------------- */
 .breadcrumb {
-  border-bottom: 1px solid #E3E3E3;
+  /*border-bottom: 1px solid #E3E3E3;*/
   font-size: 16px;
   margin-bottom: 0px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   	/*top: -60px;
   */
   position: relative;
   color: #515151;
+  	max-width: 1140px;
+}
+
+.breadcrumb span {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.breadcrumb span:before {
+	content:" "
+}
+
+.breadcrumb span:after {
+	content:" "
 }
 
 .breadcrumb a {
@@ -4953,9 +5005,32 @@ body.page-id-2 .breadcrumb,
 body.page-id-5 .breadcrumb,
 body.page-id-4 .breadcrumb,
 body.page-id-6 .breadcrumb,
-body.page-id-7 .breadcrumb,
-body.single-post .breadcrumb {
+body.page-id-7 .breadcrumb {
   display: none;
+}
+
+body.single-post article {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+body.page-id-9 header {
+	display: none;
+}
+
+body.page-id-9.parallax-home .site-inner {
+	margin-top: 0px;
+}
+
+body.page-id-9.parallax-home h1 {
+	font-size: 80px;
+	color: white;
+}
+
+body.page-id-9.parallax-home h1,
+section#text-15 .widget-wrap .textwidget img,
+section#text-15 .widget-wrap .textwidget  {
+	text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6);
 }
 
 body.single-post .entry-header::after {
@@ -4979,6 +5054,12 @@ body.single-post .entry-header::after {
 .archive-description p:last-child,
 .author-box p:last-child {
   margin-bottom: 0;
+}
+
+
+div.gridfx-1 div.gridfx-items {
+	margin-top: 0px !important;
+	padding-top: 0px !important;
 }
 
 /* Search Form
@@ -5006,14 +5087,14 @@ body.single-post .entry-header::after {
   position: absolute;
   width: 1px;
 }
-
+/*
 #wpseo-storelocator-form {
   margin: 20px auto;
   width: 35%;
   margin-top: 60px;
   float: left;
   margin-right: 2%;
-}
+}*/
 
 #wpseo-storelocator-form p {
   width: 100%;
@@ -5021,7 +5102,7 @@ body.single-post .entry-header::after {
 }
 
 #wpseo-storelocator-form fieldset {
-  border: 1px solid #333;
+  border: 3px solid #adadad;
   margin: 0 2px;
   padding: 1em 1em .75em;
   /*background: #E3E5E6;*/
@@ -5272,6 +5353,17 @@ div.gform_wrapper .gform_footer input[type=submit] {
   padding: 20px;
 }
 
+.gform_wrapper select {
+	font-size: 16px !important;
+}
+
+body.page-id-9 .gform_wrapper {
+	margin-top: 30px;
+}
+
+/* Homepage 3 Boxes
+--------------------------------------------- */
+
 div.homeboxes {
   width: 31.333333333333336%;
   float: left;
@@ -5303,7 +5395,7 @@ a .boxleft {
 }
 
 .boxcenter {
-  background: url(http://squibbs.wpengine.com/wp-content/uploads/2014/04/squibbwreck.jpg) no-repeat center;
+  background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/squibbwreck-middle-home.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5311,17 +5403,87 @@ a .boxleft {
   background-color: #b2deee;
 }
 
+.boxcenter h2 {
+	color: #002b5c;
+	padding: 24px 24px 0;
+	font-size: 22px;
+}
+
+
+.boxcenter p {
+  padding: 0px 24px;
+  color: #002b5c;
+  font-size: 40%;
+}
+
+.boxcenter img{
+	padding: 0px auto;
+	float: none;
+	color: #002b5c;
+	font-size: 70%;
+	clear: both;
+	margin: 0 auto;
+}
+
+.boxcenter p:hover {
+  padding: 0px 24px;
+  color: #fcca76;
+}
+
 .boxcenter:hover {
-  background-color: #68a7bd;
+	background-color: #68a7bd;
+}
+
+.boxcenter .mask a.button {
+	font-size: 18px;
+	padding: 10px 18px;
+	border: 3px solid #002b5c;
+	clear: left;
+	color: #002b5c;
+}
+
+.boxcenter .mask a.button:hover {
+	background-color: #fcca76;
+	border-color: #fcca76;
+	
+}
+
+.mask {
+	-webkit-transform: translateX(-359px);
+	-moz-transform: translateX(-359px);
+	-o-transform: translateX(-359px);
+	-ms-transform: translateX(-359px);
+	transform: translateX(-359px);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background: #fff;
+	width: 100%;
+	height: 150%;
+	position: relative;
+	top: -20px;
+}
+
+.boxcenter:hover .mask {
+   -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   transform: translateX(0px);
 }
 
 .boxright {
-  background: url("http://squibbs.wpengine.com/wp-content/uploads/2014/04/grannysquibbs-2.jpg");
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/grannysquibbs-3.jpg");
   background-color: #b2deee;
 }
 
 .boxright:hover {
-  background: url("http://squibbs.wpengine.com/wp-content/uploads/2014/04/grannysquibbs-2.jpg") center bottom;
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/grannysquibbs-4.jpg");
   transition: none;
   background-color: #68a7bd;
 }
@@ -6393,7 +6555,7 @@ h3.seventy {
 
 .widthseventy {
   max-width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 25px;
 }
 
 .space-left {
@@ -6705,6 +6867,8 @@ p.entry-meta {
 .entry-comments,
 .entry-pings {
   margin-bottom: 100px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 p.comment-meta,
@@ -7066,6 +7230,76 @@ body.page-id-39 .gform_wrapper input {
 body.page-id-39 .gform_wrapper label {
   font-size: 18px;
 }
+
+section#text-15.widget {
+	background: url('http://squibbs.wpengine.com/wp-content/uploads/2014/05/1015204_10151740011248530_1581506400_o-1-e1400550892777.jpg');
+	/*background-attachment: fixed;*/
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+
+section#text-15 .widget-wrap .textwidget {
+	padding: 50px;
+	text-align: center;
+	font-size: 32px;
+	color: white;
+}
+
+section#text-15 .widget-wrap .textwidget img {
+	height: 60px;
+	width: 60px;
+}
+
+section#text-15 h3 {
+	color: white;
+	text-transform: uppercase;
+}
+
+iframe#twine-iframe {
+	margin-top: 30px;
+}
+
+div.twine-item.promo {
+	display: none;
+}
+
+/*
+Color Styles
+---------------------------------------------------------------------------------------------------- */
+
+body.page-id-9 .soliloquy-container .soliloquy-caption {
+	width: 100% !important;
+	max-width: 1140px;
+	right: 100% !important;
+	left: auto !important;
+	bottom: 20px !important;
+}
+ 
+body.page-id-9 .soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+	text-align: center !important;
+	font-size: 16px !important;
+	line-height: 1.4 !important;
+	width: 100%;
+	max-width: 1140px;
+}
+
+
+body.page-id-9 .soliloquy-container .soliloquy-caption .soliloquy-caption-inside .one-third {
+	width: 30%;
+	float: left;
+	margin-left: 1%;
+}
+ 
+body.page-id-9 .soliloquy-container .soliloquy-caption h2 {
+	color: #fff !important;
+}
+
+
 
 /*
 Color Styles
