@@ -1,0 +1,136 @@
+<h1 class="aligncenter purple" >What Our Clients Say</h1>
+
+<section id="featuredQuote">
+	<blockquote>
+		Stewart is like a great chef who uses a few simple ingredients but who's recipe comes out tasting better than you thought it could. I feel lucky that he teaches at the AS220 Community Darkroom.
+	</blockquote>
+	<cite>
+		Scott Lapham / Photo Coordinator AS220 Youth Program <br>
+		www.as220.org<br>
+	</cite>
+</section>
+<section id="testimonials">
+	<article class="one-fourth first">
+		<a href="Javascript:void(0);">
+			<img src="http://stewartmartin.wpengine.com/wp-content/themes/stewart-martin/images/home-page/logos/Steel-Yard-Logo.png" >
+			<blockquote style="display:none;">
+				Here at the Steel Yard we connect the community to the industrial arts through a variety of programs and events. Stewart has helped us tell the story of everything that happens here by capturing the dramatic moments of art making in action.
+			</blockquote>
+			<cite style="display:none;">
+				Howie Sneider, Executive Director<br>
+				The Steelyard<br>
+			</cite>
+		</a>
+	</article>
+	<article class="one-fourth">
+		<a href="Javascript:void(0);">
+			<img src="http://stewartmartin.wpengine.com/wp-content/themes/stewart-martin/images/home-page/logos/RI-Council-for-the-Humanities-logo.jpg" >
+			<blockquote style="display:none;">
+				Joyful and real, Stewart Martin's photography gets to the heart of an image--the personality of my daughter, the spirit of an event, my outlook as a professional. Stewart is a technical master, but he is easy, open, and fun to work with. He is also a documentary artist, and his dedication to excellence infuses everything he does. I am grateful, and we are all lucky to have him in our community!
+			</blockquote>
+			<cite style="display:none;">
+				Elizabeth Francis, Phd <br>
+				Executive Director, RI Council for the Humanities <br>
+				www.rihumanities.org <br>
+			</cite>
+		</a>
+	</article>
+	<article class="one-fourth">
+		<a href="Javascript:void(0);">
+			<img src="http://stewartmartin.wpengine.com/wp-content/themes/stewart-martin/images/home-page/logos/lincoln-school.jpg" >
+			<blockquote style="display:none;">
+				It is always a pleasure to work with Stewart Martin. He has photographed many events for me. His calm and professional nature makes him easy to work with,  he has a great eye for shots, and he is quick to transfer files after an event. I would highly recommend Stewart.
+			</blockquote>
+			<cite style="display:none;">
+				Elizabeth Hunt<br>
+				Tech Specialist and Webmaster<br>
+				Lincoln School<br>
+			</cite>
+
+		</a>
+	</article>
+	<article class="one-fourth">
+		<a href="Javascript:void(0);">
+			<img src="http://stewartmartin.wpengine.com/wp-content/themes/stewart-martin/images/home-page/logos/AS220-LOGO.png" >
+			<blockquote style="display:none;">
+			Stewart is like a great chef who uses a few simple ingredients but who's recipe comes out tasting better than you thought it could. I feel lucky that he teaches at the AS220 Community Darkroom.
+			</blockquote>
+			<cite style="display:none;">
+				Scott Lapham / Photo Coordinator AS220 Youth Program <br>
+				www.as220.org <br>
+			</cite>
+		</a>
+	</article>
+</section>
+<script>
+
+	(function testimonials ($){
+
+		var $featQuote = $('#featuredQuote');
+		var $testimonials = $('#testimonials');
+
+		var $featBlockQ = $featQuote.find('blockquote');
+		var $featCite   = $featQuote.find('cite');
+
+		var $articles = $testimonials.find('article');
+
+		// First create JS object array of quotes
+		var quotes = jQuery.map($articles, function(obj){
+
+			var $obj = $(obj);
+
+			return {
+				blockquote: $obj.find('blockquote').html(),
+				cite: $obj.find('cite').html()
+			};
+		});
+
+		var i = 0;
+
+		// Cycle quotes and change text if testimonials are not being hovered
+		function cycleQuotes(){
+
+			var j = i % quotes.length;
+
+			if (!$testimonials.is(":hover") && !$featQuote.is(":hover")){
+
+				$featQuote.addClass('animated fade-down-out');
+
+				setTimeout(function(){
+
+					$featQuote.removeClass('fade-up-in fade-down-out');
+
+					$featBlockQ.html(quotes[j].blockquote);
+					$featCite.html(quotes[j].cite);
+
+					$featQuote.addClass('fade-up-in');
+
+				}, 1000)
+
+				
+				$articles.find('img').removeClass('hovered');
+				$articles.eq(j).find('img').addClass('hovered');
+				i++;
+			}
+
+		}
+
+		// Change global index and click on text
+		$testimonials.find('a').click(function(){
+
+			var $this = $(this);
+			i = $this.index();
+			$testimonials.find('img').removeClass('hovered');
+			$this.find('img').addClass('hovered');
+			$featBlockQ.html($this.find('blockquote').html());
+			$featCite.html($this.find('cite').html());
+
+		});
+
+		setInterval(cycleQuotes, 6500);
+
+	})(jQuery);
+
+
+
+</script>

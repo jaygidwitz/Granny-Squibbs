@@ -26,10 +26,18 @@ add_action( 'wp_enqueue_scripts', 'parallax_enqueue_scripts_styles' );
 function parallax_enqueue_scripts_styles() {
 
 	wp_enqueue_script( 'parallax-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'waypoints', get_bloginfo( 'stylesheet_directory' ) . '/js/waypoints.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'waypoints-sticky', get_bloginfo( 'stylesheet_directory' ) . '/js/waypoints-sticky.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'waypoints-script', get_bloginfo( 'stylesheet_directory' ) . '/js/waypoints-script.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'preloadcssimages', get_bloginfo( 'stylesheet_directory' ) . '/js/preloadCssImages.jQuery_v5.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'preloadload', get_bloginfo( 'stylesheet_directory' ) . '/js/preloadload.js', array( 'jquery' ), '1.0.0' );
+
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'parallax-google-fonts', '//fonts.googleapis.com/css?family=Montserrat|Sorts+Mill+Goudy', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'parallax-google-fonts', '//fonts.googleapis.com/css?family=Montserrat|Lobster+Two', array(), CHILD_THEME_VERSION );
 
 }
+
+
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
@@ -105,6 +113,21 @@ function parallax_after_entry() {
 
 }
 
+
+
+//* Hook before post widget before the entry content
+add_action( 'genesis_before_entry', 'parallax_before_entry', 5 );
+function parallax_before_entry() {
+
+	if ( is_singular() )
+		genesis_widget_area( 'before-entry', array(
+			'before' => '<div class="before-entry widget-area">',
+			'after'  => '</div>',
+		) );
+
+}
+
+
 //* Modify the size of the Gravatar in the author box
 add_filter( 'genesis_author_box_gravatar_size', 'parallax_author_box_gravatar' );
 function parallax_author_box_gravatar( $size ) {
@@ -154,7 +177,11 @@ genesis_register_sidebar( array(
 	'name'        => __( 'After Entry', 'parallax' ),
 	'description' => __( 'This is the after entry widget area.', 'parallax' ),
 ) );
-
+genesis_register_sidebar( array(
+	'id'          => 'before-entry',
+	'name'        => __( 'Before Entry', 'parallax' ),
+	'description' => __( 'This is the before entry widget area.', 'parallax' ),
+) );
 
 
 
@@ -172,7 +199,8 @@ function prefix_enqueue_awesome() {
 
 
 
-
+// Enable shortcodes in widgets
+add_filter('widget_text', 'do_shortcode');
 
 
 // Add Shortcode
@@ -265,6 +293,12 @@ add_shortcode( 'tea', 'teas_insert_shortcode' );
 
 
 
-
+/** Load scripts on Portfolio page */
+add_action('genesis_after_footer', 'child_load_portfolio');
+function child_load_portfolio() {
+    if(is_page('hashtag-grannysquibbs') && ! wp_is_mobile()) { 
+       				wp_enqueue_script( 'parallax-script2', get_bloginfo( 'stylesheet_directory' ) . '/js/parallax2.js', array( 'jquery' ), '1.0.0' );
+    }
+}
 
 
