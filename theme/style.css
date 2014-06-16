@@ -14,7 +14,7 @@
 
 	License: GPL-2.0+
 	License URI: http://www.opensource.org/licenses/gpl-license.php 
-*/
+	*/
 /* Table of Contents
 
 	- HTML5 Reset
@@ -74,13 +74,13 @@
 		- Max-width: 1023px
 		- Max-width: 768px
 
-*/
+		*/
 /*
 HTML5 Reset
 ---------------------------------------------------------------------------------------------------- */
 /* Baseline Normalize
 	normalize.css v2.1.3 | MIT License | git.io/normalize
---------------------------------------------- */
+	--------------------------------------------- */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
 }
@@ -4471,7 +4471,7 @@ body.single-post p.entry-meta {
 body.page-id-2 {
 	background: url('http://squibbs.wpengine.com/wp-content/uploads/2014/04/beach.jpg') no-repeat center center fixed;
 	background-size: cover;
-}*/
+	}*/
 body.page-id-2 .full-width-content .content,
 .breadcrumb {
   padding: 0;
@@ -4482,15 +4482,15 @@ body.page-id-2 .full-width-content .content,
 }
 
 body.page-id-9 .breadcrumb {
-	padding: 10px 0;
+  padding: 10px 0;
 }
 
 body.page-id-9 section#text-12 div.widget-wrap {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 body.page-id-5 div.content-sidebar-wrap {
-	margin: 0 20px;
+  margin: 0 20px;
 }
 
 body.page-id-7 .site-inner,
@@ -4509,39 +4509,39 @@ body.page-id-2 main.content {
 }
 
 article.post-11 {
-	margin: 0px auto;
-	max-width: 1140px;
+  margin: 0px auto;
+  max-width: 1140px;
 }
 
 article.post-7 {
-	text-align: center;
+  text-align: center;
 }
 
 article.post-7 hr.orangeline {
-	margin: 20px auto !important;
+  margin: 20px auto !important;
 }
 
 div.sixty {
-	max-width: 60%;
-	margin: 0 auto;
+  max-width: 60%;
+  margin: 0 auto;
 }
-
 
 article.post-7 div.gform_wrapper input[type="email"],
 article.post-7 div.gform_wrapper input[type="text"],
 article.post-7 div.gform_wrapper textarea,
 article.post-7 div.gform_wrapper .ginput_complex label {
-	font-size: 16px;
-	padding: 8px;
+  font-size: 16px;
+  padding: 8px;
 }
 
 article.post-7 p.address {
-	text-align: left;
+  text-align: left;
 }
 
 article.post-7 p.address i.fa {
-	margin-right: 8px;
+  margin-right: 8px;
 }
+
 body.page-id-2 article,
 body.page-id-39 main.content {
   max-width: 1140px;
@@ -4622,7 +4622,7 @@ i {
 }
 
 blockquote {
-/*  color: #999;*/
+  /*  color: #999;*/
   margin: 0 15px;
 }
 
@@ -4637,7 +4637,7 @@ blockquote::before {
 }
 
 span.quote {
-	font-size: 130%;
+  font-size: 130%;
 }
 
 /* Headings
@@ -4757,22 +4757,20 @@ input[type="submit"] {
   letter-spacing: 1px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
-	padding: 10px 18px;
-	border: 3px solid #fcca76;
-	clear: left;
-	color: #002b5c;
-	background-color: #fcca76;
-	border-color: #fcca76;
+  padding: 10px 18px;
+  border: 3px solid #fcca76;
+  clear: left;
+  color: #002b5c;
+  background-color: #fcca76;
+  border-color: #fcca76;
 }
-
-
 
 input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"] {
-  	background-color: #fcca76;
-	border-color: #fcca76;
-	color: #002b5c;
+  background-color: #fcca76;
+  border-color: #fcca76;
+  color: #002b5c;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -4813,27 +4811,27 @@ div.one-half a.button,
 a.button,
 div.one-half a.button,
 .home-even a.button {
-	font-size: 18px;
-	padding: 10px 18px;
-	border: 3px solid #002b5c;
-	clear: left;
-	color: #002b5c;
+  font-size: 18px;
+  padding: 10px 18px;
+  border: 3px solid #002b5c;
+  clear: left;
+  color: #002b5c;
 }
 
 a.button:hover,
 div.one-half a.button:hover,
 .home-even a.button:hover {
-	background-color: #fcca76;
-	border-color: #fcca76;
-	color: #002b5c;
+  background-color: #fcca76;
+  border-color: #fcca76;
+  color: #002b5c;
 }
 
 div.fbx-inner.fbx-inner-shadow {
-	border: 6px solid #8abbe4;
+  border: 6px solid #8abbe4;
 }
 
 h2.lobster {
-	font-family: "Lobster Two", Cursive;
+  font-family: "Lobster Two", Cursive;
 }
 
 /*.home-section-4 a.button {
@@ -4845,25 +4843,20 @@ h2.lobster {
   color: #666;
   background-color: #fff;
   border: 3px solid #666;
-}*/
-
-
+  }*/
 .home-section-4 a.button {
-	font-size: 18px;
-	padding: 10px 18px;
-	border: 3px solid #002b5c;
-	clear: left;
-	color: #002b5c;
+  font-size: 18px;
+  padding: 10px 18px;
+  border: 3px solid #002b5c;
+  clear: left;
+  color: #002b5c;
 }
 
 .home-section-4 a.button:hover {
-	background-color: #fcca76;
-	border-color: #fcca76;
-	color: #002b5c;
-	
+  background-color: #fcca76;
+  border-color: #fcca76;
+  color: #002b5c;
 }
-
-
 
 .fbx-stage a.button {
   padding: 15px 50px !important;
@@ -4924,36 +4917,34 @@ Structure and Layout
 }
 
 body.home.parallax-home .site-inner {
-	margin-top: 0px;
-}
-  
-body.home.parallax-home .site-header {
-	background: none;
+  margin-top: 0px;
 }
 
+body.home.parallax-home .site-header {
+  background: none;
+}
 
 body.home.parallax-home section#text-7 {
-	display: none;
+  display: none;
 }
 
-
 body.home.parallax-home #menu-left-menu.genesis-nav-menu .menu-item {
-	float: left;
-	margin-left: 40px;
+  float: left;
+  margin-left: 40px;
 }
 
 body.home.parallax-home #menu-right-menu.genesis-nav-menu .menu-item {
-	float: right;
-	margin-right: 40px;
+  float: right;
+  margin-right: 40px;
 }
 
 body.home.parallax-home #nav_menu-3 {
-	float: right;
+  float: right;
 }
 
 body.home.parallax-home .site-header .widget-area {
-	margin: 0 auto;
-	max-width: 1240px;
+  margin: 0 auto;
+  max-width: 1240px;
 }
 
 .parallax-landing .site-inner {
@@ -4962,7 +4953,7 @@ body.home.parallax-home .site-header .widget-area {
 
 /* Column Classes
 	Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
---------------------------------------------- */
+	--------------------------------------------- */
 .five-sixths,
 .four-sixths,
 .one-fourth,
@@ -5060,24 +5051,24 @@ Common Classes
   font-size: 16px;
   margin-bottom: 0px;
   padding: 10px 0;
-  	/*top: -60px;
+  /*top: -60px;
   */
   position: relative;
   color: #515151;
-  	max-width: 1140px;
+  max-width: 1140px;
 }
 
 .breadcrumb span {
-	max-width: 1140px;
-	margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .breadcrumb span:before {
-	content:" "
+  content: " ";
 }
 
 .breadcrumb span:after {
-	content:" "
+  content: " ";
 }
 
 .breadcrumb a {
@@ -5097,27 +5088,27 @@ body.page-id-7 .breadcrumb {
 }
 
 body.single-post article {
-	max-width: 800px;
-	margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 body.page-id-9 header {
-	display: none;
+  display: none;
 }
 
 body.page-id-9.parallax-home .site-inner {
-	margin-top: 0px;
+  margin-top: 0px;
 }
 
 body.page-id-9.parallax-home h1 {
-	font-size: 80px;
-	color: white;
+  font-size: 80px;
+  color: white;
 }
 
 body.page-id-9.parallax-home h1,
 section#text-15 .widget-wrap .textwidget img,
-section#text-15 .widget-wrap .textwidget  {
-	text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6);
+section#text-15 .widget-wrap .textwidget {
+  text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6);
 }
 
 body.single-post .entry-header::after {
@@ -5143,10 +5134,9 @@ body.single-post .entry-header::after {
   margin-bottom: 0;
 }
 
-
 div.gridfx-1 div.gridfx-items {
-	margin-top: 0px !important;
-	padding-top: 0px !important;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
 }
 
 /* Search Form
@@ -5174,6 +5164,7 @@ div.gridfx-1 div.gridfx-items {
   position: absolute;
   width: 1px;
 }
+
 /*
 #wpseo-storelocator-form {
   margin: 20px auto;
@@ -5181,8 +5172,7 @@ div.gridfx-1 div.gridfx-items {
   margin-top: 60px;
   float: left;
   margin-right: 2%;
-}*/
-
+  }*/
 #wpseo-storelocator-form p {
   width: 100%;
   float: left;
@@ -5240,6 +5230,7 @@ table.adp-placemark tbody tr td img.adp-marker {
   top: -200px;
   opacity: 0;
 }
+
 #wpseo-storelocator-results h2, #wpseo-storelocator-results h3 {
   font-size: 20px;
   margin: 20px 0 5px;
@@ -5441,16 +5432,15 @@ div.gform_wrapper .gform_footer input[type=submit] {
 }
 
 .gform_wrapper select {
-	font-size: 16px !important;
+  font-size: 16px !important;
 }
 
 body.page-id-9 .gform_wrapper {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 /* Homepage 3 Boxes
 --------------------------------------------- */
-
 div.homeboxes {
   width: 31.333333333333336%;
   float: left;
@@ -5469,13 +5459,13 @@ div.homeboxes {
 
 .boxleft,
 a .boxleft {
-	background-color: #b2deee;
-	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/gs-map-narragansett-bay-2.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	color: white;
+  background-color: #b2deee;
+  background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/gs-map-narragansett-bay-2.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
 .boxleft p {
@@ -5484,12 +5474,12 @@ a .boxleft {
 
 .boxleft:hover {
   background-color: #68a7bd;
-	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/gs-map-narragansett-bay.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	color: white;
+  background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/gs-map-narragansett-bay.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
 .boxcenter {
@@ -5502,11 +5492,10 @@ a .boxleft {
 }
 
 .boxcenter h2 {
-	color: #002b5c;
-	padding: 24px 24px 0;
-	font-size: 22px;
+  color: #002b5c;
+  padding: 24px 24px 0;
+  font-size: 22px;
 }
-
 
 .boxcenter p {
   padding: 0px 24px;
@@ -5514,13 +5503,13 @@ a .boxleft {
   font-size: 40%;
 }
 
-.boxcenter img{
-	padding: 0px auto;
-	float: none;
-	color: #002b5c;
-	font-size: 70%;
-	clear: both;
-	margin: 0 auto;
+.boxcenter img {
+  padding: 0px auto;
+  float: none;
+  color: #002b5c;
+  font-size: 70%;
+  clear: both;
+  margin: 0 auto;
 }
 
 .boxcenter p:hover {
@@ -5529,50 +5518,49 @@ a .boxleft {
 }
 
 .boxcenter:hover {
-	background-color: #68a7bd;
+  background-color: #68a7bd;
 }
 
 .boxcenter .mask a.button {
-	font-size: 18px;
-	padding: 10px 18px;
-	border: 3px solid #002b5c;
-	clear: left;
-	color: #002b5c;
+  font-size: 18px;
+  padding: 10px 18px;
+  border: 3px solid #002b5c;
+  clear: left;
+  color: #002b5c;
 }
 
 .boxcenter .mask a.button:hover {
-	background-color: #fcca76;
-	border-color: #fcca76;
-	
+  background-color: #fcca76;
+  border-color: #fcca76;
 }
 
 .mask {
-	-webkit-transform: translateX(-359px);
-	-moz-transform: translateX(-359px);
-	-o-transform: translateX(-359px);
-	-ms-transform: translateX(-359px);
-	transform: translateX(-359px);
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	background: #fff;
-	width: 100%;
-	height: 150%;
-	position: relative;
-	top: -20px;
+  -webkit-transform: translateX(-359px);
+  -moz-transform: translateX(-359px);
+  -o-transform: translateX(-359px);
+  -ms-transform: translateX(-359px);
+  transform: translateX(-359px);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  width: 100%;
+  height: 150%;
+  position: relative;
+  top: -20px;
 }
 
 .boxcenter:hover .mask {
-   -webkit-transform: translateX(0px);
-   -moz-transform: translateX(0px);
-   -o-transform: translateX(0px);
-   -ms-transform: translateX(0px);
-   transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 .boxright {
@@ -5818,11 +5806,11 @@ aside.header-widget-area {
 }
 
 section#nav_menu-2 nav ul#menu-left-menu-home li.menu-item {
-	float: right;
+  float: right;
 }
 
 section#nav_menu-3 nav ul#menu-right-menu-home li.menu-item {
-	float: left;
+  float: left;
 }
 
 #nav_menu-4 {
@@ -5830,11 +5818,13 @@ section#nav_menu-3 nav ul#menu-right-menu-home li.menu-item {
   clear: none;
   width: 47.5%;
 }
+
 #text-7 {
   float: left;
   clear: none;
   width: 5%;
 }
+
 #nav_menu-5 {
   float: left;
   clear: none;
@@ -5872,16 +5862,15 @@ header .wrap {
 
 #text-2 img {
   margin-top: 6vh;
--webkit-filter: drop-shadow(2px 0px 1px rgba(255,255,255,.5));
+  -webkit-filter: drop-shadow(2px 0px 1px rgba(255, 255, 255, 0.5));
   /*   filter: url(#drop-shadow);
-     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";*/
-    /* width: 300px;
-	/*position: relative;
-	top: -55px;
-    */ 
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	 filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";*/
+  /* width: 300px;
+  /*position: relative;
+  top: -55px;
+  */
 }
-
 
 #nav_menu-3 {
   float: left;
@@ -6442,25 +6431,25 @@ table tbody {
 }
 
 div.logos img {
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	-o-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-	-webkit-transition-duration: 0.4s;
-	-moz-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	-ms-transition-duration: 0.4s;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
 }
 
 div.logos img:hover {
-	-webkit-filter: grayscale(0%);
-	-o-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-	-webkit-transition-duration: 0.4s;
-	-moz-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	-ms-transition-duration: 0.4s;
+  -webkit-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
   z-index: 2px;
 }
 
@@ -6654,8 +6643,8 @@ hr.orangeline {
 }
 
 div.clear {
-	clear: both;
-	}
+  clear: both;
+}
 
 hr.orangelinelong {
   display: block;
@@ -6880,11 +6869,11 @@ p.entry-meta {
   padding-bottom: 15px;
   width: 25%;*/
   /*	border-bottom: 1px solid #000;
-  	content: "";
-  	display: block;
-  	margin: 0 auto 0px;
-  	padding-bottom: 5px;
-  	width: 25%;*/
+	content: "";
+	display: block;
+	margin: 0 auto 0px;
+	padding-bottom: 5px;
+	width: 25%;*/
 }
 
 .sidebar .entry-header::after {
@@ -7149,8 +7138,9 @@ Footer Widgets
   height: 40px;
   width: 100%;
   bottom: -1px;
-	position: relative;
+  position: relative;
 }
+
 .before-footer.sticky-bottom {
   position: absolute;
 }
@@ -7171,6 +7161,7 @@ Site Footer
   font-size: 15px;
   padding-bottom: 15px;
 }
+
 .site-footer.sticky-bottom {
   position: absolute;
   width: 100%;
@@ -7205,8 +7196,8 @@ Site Footer
 }
 
 .site-footer i.fa.fa-anchor {
-	font-size: 16px;
-} 
+  font-size: 16px;
+}
 
 .site-footer .fa.fa-facebook,
 .site-footer .fa.fa-twitter {
@@ -7376,7 +7367,7 @@ body.page-id-4 .gallery dl dt a img {
 	transform-origin: top center;
 	-webkit-animation: swing;
 	animation: swing;
-}*/
+	}*/
 body.parent-pageid-4 header.entry-header {
   display: none;
 }
@@ -7398,114 +7389,107 @@ body.page-id-39 .gform_wrapper label {
 }
 
 section#text-15.widget {
-	background: url('http://squibbs.wpengine.com/wp-content/uploads/2014/05/1015204_10151740011248530_1581506400_o-1-e1400550892777.jpg');
-	/*background-attachment: fixed;*/
-	background-color: #fff;
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+  background: url("http://squibbs.wpengine.com/wp-content/uploads/2014/05/1015204_10151740011248530_1581506400_o-1-e1400550892777.jpg");
+  /*background-attachment: fixed;*/
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
-
 section#text-15 .widget-wrap .textwidget {
-	padding: 50px;
-	text-align: center;
-	font-size: 32px;
-	color: white;
+  padding: 50px;
+  text-align: center;
+  font-size: 32px;
+  color: white;
 }
 
 section#text-15 .widget-wrap .textwidget img {
-	height: 60px;
-	width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 section#text-15 h3 {
-	color: white;
-	text-transform: uppercase;
+  color: white;
+  text-transform: uppercase;
 }
-
 
 section#text-16.widget {
-	background: url('http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-page-picture-granny-squibbs.jpg');
-	/*background-attachment: fixed;*/
-	background-color: #fff;
-	background-position: top center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	min-height: 355px;
-	margin-top: 70px;
-	margin-bottom: 20px;
-	max-height: 500px;
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-page-picture-granny-squibbs.jpg");
+  /*background-attachment: fixed;*/
+  background-color: #fff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-height: 355px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  max-height: 500px;
 }
 
-
 section#text-16 .widget-wrap .textwidget {
-	padding: 100px 50px 50px;
-	text-align: center;
-	font-size: 32px;
-	color: white;
+  padding: 100px 50px 50px;
+  text-align: center;
+  font-size: 32px;
+  color: white;
 }
 
 section#text-16 .widget-wrap .textwidget h1 {
-	color: white;
-	text-shadow: 1px 1px #000;
+  color: white;
+  text-shadow: 1px 1px #000;
 }
 
 section#text-16 .widget-wrap .textwidget img {
-	height: 60px;
-	width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 section#text-16 h3 {
-	color: white;
-	text-transform: uppercase;
-	text-shadow: 1px 1px #000;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #000;
 }
 
 iframe#twine-iframe {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 div.twine-item.promo {
-	display: none;
+  display: none;
 }
 
 /*
 Color Styles
 ---------------------------------------------------------------------------------------------------- */
-
 body.page-id-9 .soliloquy-container .soliloquy-caption {
-	width: 100% !important;
-	max-width: 1140px;
-	right: 100% !important;
-	left: auto !important;
-	bottom: 20px !important;
-}
- 
-body.page-id-9 .soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
-	text-align: center !important;
-	font-size: 16px !important;
-	line-height: 1.4 !important;
-	width: 100%;
-	max-width: 1140px;
+  width: 100% !important;
+  max-width: 1140px;
+  right: 100% !important;
+  left: auto !important;
+  bottom: 20px !important;
 }
 
+body.page-id-9 .soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+  text-align: center !important;
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  width: 100%;
+  max-width: 1140px;
+}
 
 body.page-id-9 .soliloquy-container .soliloquy-caption .soliloquy-caption-inside .one-third {
-	width: 30%;
-	float: left;
-	margin-left: 1%;
+  width: 30%;
+  float: left;
+  margin-left: 1%;
 }
- 
+
 body.page-id-9 .soliloquy-container .soliloquy-caption h2 {
-	color: #fff !important;
+  color: #fff !important;
 }
-
-
 
 /*
 Color Styles
@@ -7662,24 +7646,24 @@ body.home.page footer.site-footer .wrap {
   border-top-right-radius: 6px;
   transition: none;
   background-attachment: inherit;
-	background-color: #fff;
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+  background-color: #fff;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 .recipes .food:hover {
   background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-food-2.jpg") center;
   transition: none;
-    background-attachment: inherit;
-	background-color: #fff;
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+  background-attachment: inherit;
+  background-color: #fff;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 .recipes .drinks {
@@ -7692,24 +7676,24 @@ body.home.page footer.site-footer .wrap {
   border-top-right-radius: 6px;
   transition: none;
   background-attachment: inherit;
-	background-color: #fff;
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+  background-color: #fff;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 .recipes .drinks:hover {
   background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-drinks-2.jpg") center;
   transition: none;
-    background-attachment: inherit;
-	background-color: #fff;
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+  background-attachment: inherit;
+  background-color: #fff;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 .soliloquy-container .soliloquy-caption {
@@ -7737,12 +7721,10 @@ body.home.page footer.site-footer .wrap {
   margin-bottom: 10px !important;
 }
 
-
 article.post-4 h2 {
-	max-width: 1140px;
-	margin: 0 auto;
-	}
-
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .soliloquy-container .soliloquy-caption {
@@ -7759,51 +7741,41 @@ article.post-4 h2 {
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
-
 @media screen and (max-width: 1600px) and (min-width: 1441px) {
+  .home-odd.home-section-1 {
+    height: 100vh;
+  }
 
-	.home-odd.home-section-1 {
-		height: 100vh;
-	}
-	
-	/*#text-2 img {
-		  padding-bottom: 0px;
-		  margin-top: 90px;
-	}*/
-	
+  /*#text-2 img {
+  	  padding-bottom: 0px;
+  	  margin-top: 90px;
+  	  }*/
 }
-
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
+  div.home-odd.home-section-1.widget-area {
+    height: 100vh;
+    background-image: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/clouds-granny-squibbs-iced-teas-1440-1140.jpg");
+  }
 
-	div.home-odd.home-section-1.widget-area {
-		height:100vh;
-		background-image: url('http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/clouds-granny-squibbs-iced-teas-1440-1140.jpg');
-	}
-	
-	#text-2 img {
-		  padding-bottom: 0px;
-		  margin-top: 6vh;
-		  width: 25%;
-	}
-	
+  #text-2 img {
+    padding-bottom: 0px;
+    margin-top: 6vh;
+    width: 25%;
+  }
 }
-
 @media screen and (max-height: 1000px) {
-	/*.home-odd.home-section-1 {
-		padding: 80px 0 80px;
-	}
-
-	#text-2 {
-		margin-bottom: 0px;
-	}*/
-	
-	/*#text-2 img {
-		  padding-bottom: 0px;
-		  margin-top: 60px;
-	}*/
-}  
-
-
+  	/*.home-odd.home-section-1 {
+  		padding: 80px 0 80px;
+  	}
+  
+  	#text-2 {
+  		margin-bottom: 0px;
+  		}*/
+  /*#text-2 img {
+  	  padding-bottom: 0px;
+  	  margin-top: 60px;
+  	  }*/
+}
 @media only screen and (max-width: 1139px) {
   .site-inner,
   .wrap {
@@ -7839,20 +7811,12 @@ Media Queries
   .full-width-content .content {
     padding: 0 110px;
   }
-  
-  
 }
-
-
 @media only screen and (max-width: 1070px) {
-
-	.genesis-nav-menu a {
-		padding: 27px 20px;
-	}
+  .genesis-nav-menu a {
+    padding: 27px 20px;
+  }
 }
-
-
-
 @media only screen and (max-width: 1023px) {
   .site-inner,
   .wrap {
@@ -7991,10 +7955,10 @@ Media Queries
   	/*.responsive-menu {
   		display: none;
   	}
-  
+    
   	#responsive-menu-icon {
   		display: block;
-  	}*/
+  		}*/
   .home-even,
   .home-odd {
     padding: 90px 0 100px;
