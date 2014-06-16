@@ -4860,7 +4860,7 @@ h2.lobster {
   	background-color: #fcca76;
   	border-color: #fcca76;
   	color: #002b5c;
-  	
+
   }
 
 
@@ -5233,25 +5233,27 @@ div.gridfx-1 div.gridfx-items {
   	top: 5px;
   }
 
-  #wpseo-storelocator-results {
-  	width: 35%;
-  	float: left;
-  	position: relative;
-  	top: -200px;
-  	opacity: 0;
-  }
-  #wpseo-storelocator-results h2, #wpseo-storelocator-results h3 {
-  	font-size: 20px;
-  	margin: 20px 0 5px;
-  }
+#wpseo-storelocator-results {
+	
+	width: 35%;
+	float: left;
+	position: relative;
+	opacity: 0;
+	
+	h2, h3 {
+		font-size: 20px;
+		margin: 20px 0 5px;
+	}
 
-  .wpseo-location {
-  	font-size: .8em;
-  }
+}
 
-  .page-id-5 .entry {
-  	margin-bottom: 0px;
-  }
+.wpseo-location {
+	font-size: .8em;
+}
+
+.page-id-5 .entry {
+	margin-bottom: 0px;
+}
 
 /* Titles
 --------------------------------------------- */
@@ -7770,7 +7772,7 @@ Media Queries
 		  padding-bottom: 0px;
 		  margin-top: 90px;
 		  }*/
-		  
+
 		}
 
 		@media screen and (max-width: 1440px) and (min-width: 1140px) {
@@ -7779,13 +7781,13 @@ Media Queries
 				height:100vh;
 				background-image: url('http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/clouds-granny-squibbs-iced-teas-1440-1140.jpg');
 			}
-			
+
 			#text-2 img {
 				padding-bottom: 0px;
 				margin-top: 6vh;
 				width: 25%;
 			}
-			
+
 		}
 
 		@media screen and (max-height: 1000px) {
@@ -7796,7 +7798,7 @@ Media Queries
 	#text-2 {
 		margin-bottom: 0px;
 		}*/
-		
+
 	/*#text-2 img {
 		  padding-bottom: 0px;
 		  margin-top: 60px;
@@ -7839,8 +7841,8 @@ Media Queries
 			.full-width-content .content {
 				padding: 0 110px;
 			}
-			
-			
+
+
 		}
 
 
