@@ -3,7 +3,6 @@
 (function stickyFooter($){
 
 	var stickyClass = 'sticky-bottom';
-	var $envira = $('.envira-gallery-wrap');
 
 	function stickToBottom () {
 
@@ -30,14 +29,15 @@
 	}
 
 	// On DOM Ready on pages without Envira Gallery
-	if ($envira.length === 0) {
+	if ($('.pd-dynamic-footer').length === 0) {
 
 		stickToBottom();
 		// On Resize
 		$(window).resize(stickToBottom);
 
 	} else {
-		$envira.imagesLoaded(function(){
+		$('.entry-content').imagesLoaded(function(){
+			console.log('images loaded');
 			stickToBottom();
 			$(window).resize(stickToBottom);
 		});
