@@ -5379,16 +5379,24 @@ Widgets
 /* Simple Social Icons
 --------------------------------------------- */
 .parallax-home .simple-social-icons {
+
 	margin-top: 40px;
+
+	 ul li {
+		margin: 0 20px !important;
+	}
+
+	 ul li a,
+	 ul li a:hover {
+		padding: 30px;
+	}
 }
 
-.parallax-home .simple-social-icons ul li {
-	margin: 0 20px !important;
-}
-
-.parallax-home .simple-social-icons ul li a,
-.parallax-home .simple-social-icons ul li a:hover {
-	padding: 30px;
+.simple-social-icons {
+	ul li {
+		float: none !important;
+		display: inline-block !important;
+	}
 }
 
 /*
@@ -5694,11 +5702,18 @@ Site Navigation
 	letter-spacing: 1px;
 	line-height: 1;
 	width: 100%;
-}
 
-.genesis-nav-menu .menu-item {
-	display: inline-block;
-	text-align: left;
+	.menu-item {
+		display: inline-block;
+		text-align: left;
+		vertical-align: middle;
+	}
+	a {
+		color: #fff;
+		display: block;
+		font-family: Montserrat, sans-serif;
+		padding: 1.7em 1em;
+	}
 }
 
 #menu-right-menu.genesis-nav-menu .menu-item {
@@ -5713,12 +5728,6 @@ Site Navigation
 	margin-left: 0;
 }
 
-.genesis-nav-menu a {
-	color: #fff;
-	display: block;
-	font-family: Montserrat, sans-serif;
-	padding: 27px 30px;
-}
 
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .sub-menu a:hover,
@@ -7767,28 +7776,30 @@ Media Queries
 	.home-odd.home-section-1 {
 		height: 100vh;
 	}
-	
-	/*#text-2 img {
-		  padding-bottom: 0px;
-		  margin-top: 90px;
-		  }*/
+}
 
-		}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
 
-		@media screen and (max-width: 1440px) and (min-width: 1140px) {
+	div.home-odd.home-section-1.widget-area {
+		height:100vh;
+		background-image: url('http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/clouds-granny-squibbs-iced-teas-1440-1140.jpg');
+	}
 
-			div.home-odd.home-section-1.widget-area {
-				height:100vh;
-				background-image: url('http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/clouds-granny-squibbs-iced-teas-1440-1140.jpg');
-			}
+	#text-2 img {
+		padding-bottom: 0px;
+		margin-top: 6vh;
+		width: 25%;
+	}
 
-			#text-2 img {
-				padding-bottom: 0px;
-				margin-top: 6vh;
-				width: 25%;
-			}
+}
 
-		}
+@media screen and (max-width: 1139px){
+	.home-section-1 {
+		background-size: auto 100% !important;
+		background-position: 43% center !important;		
+	}
+}
+
 
 		@media screen and (max-height: 1000px) {
 	/*.home-odd.home-section-1 {
@@ -7863,10 +7874,6 @@ Media Queries
 
 			.parallax-home .site-inner {
 				max-width: none;
-			}
-
-			section#text-7 {
-				display: none;
 			}
 
 			.site-header {
