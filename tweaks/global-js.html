@@ -51,4 +51,18 @@
 
 
 })(jQuery);
+
+(function animatedBgHomepage($){
+	
+	var $body = $('body');
+	
+	if($body.hasClass('home')) {
+		$body.prepend('<div id="homepageNavBg"></div>');
+		
+		$('.home-section-2').waypoint(function(){
+			$('#homepageNavBg').toggleClass('online');
+		});
+	}
+
+})(jQuery);
 </script>

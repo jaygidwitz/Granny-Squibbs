@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "animate.scss": "*"
+    "animate.scss": "*",
+    "bourbon": "~4.0.2"
   }
 }
