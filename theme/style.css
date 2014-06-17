@@ -5129,20 +5129,12 @@ Widgets
 
 /* Simple Social Icons
 --------------------------------------------- */
-.parallax-home .simple-social-icons {
-  margin-top: 40px;
-}
-.parallax-home .simple-social-icons ul li {
-  margin: 0 20px !important;
-}
-.parallax-home .simple-social-icons ul li a,
-.parallax-home .simple-social-icons ul li a:hover {
-  padding: 30px;
-}
-
 .simple-social-icons ul li {
-  float: none !important;
-  display: inline-block !important;
+  float: none;
+  display: inline-block;
+}
+.simple-social-icons body.home .site-header {
+  display: none;
 }
 
 /*
@@ -5438,7 +5430,7 @@ Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 /* For homepage */
 #homepageNavBg {
-  background: #88BCE4;
+  background: #88bce4;
   position: fixed;
   top: 0;
   width: 100%;
@@ -5474,6 +5466,45 @@ Site Navigation
   display: block;
   font-family: Montserrat, sans-serif;
   padding: 1.7em 1em;
+}
+@media screen and (max-width: 1180px) {
+  .genesis-nav-menu#menu-left-menu-all, .genesis-nav-menu#menu-right-menu-all, .genesis-nav-menu#menu-right-menu-home, .genesis-nav-menu#menu-left-menu-home {
+    display: none;
+  }
+}
+
+#mobileNavOpen {
+  display: none;
+  position: absolute;
+  color: #FFF;
+  right: 1em;
+  top: 25%;
+  font-size: 2em;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#mobileNavOpen:hover {
+  color: #002b5c;
+}
+@media screen and (max-width: 1180px) {
+  #mobileNavOpen {
+    display: block;
+  }
+}
+
+.logged-in #jPanelMenu-menu {
+  margin-top: 46px;
+}
+#jPanelMenu-menu > li > a {
+  font-size: 18px;
+  padding: 1.7em 1em;
+}
+#jPanelMenu-menu .simple-social-icons .alignleft {
+  float: none;
+  width: 100%;
+  text-align: center;
 }
 
 #menu-right-menu.genesis-nav-menu .menu-item {
@@ -5636,6 +5667,11 @@ body.home.page .wrap {
 
 header .wrap {
   height: 70px;
+}
+@media screen and (max-width: 1180px) {
+  body.home header .wrap {
+    background: #88bce4;
+  }
 }
 
 #text-2 {
@@ -6279,6 +6315,12 @@ div.logos img:hover {
 
 #text-7 {
   width: 5%;
+}
+@media screen and (max-width: 1180px) {
+  #text-7 {
+    width: auto;
+    float: none;
+  }
 }
 
 .gridfx {

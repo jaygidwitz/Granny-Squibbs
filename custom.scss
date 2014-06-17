@@ -268,8 +268,12 @@ input[type="search"] {
 
 /* SCSS Plugins
 --------------------------------------------- */
+$GSnav: 1180px;
+$lightBlue: #88BCE4;
 @import "bower_components/bourbon/dist/bourbon";
 @import "bower_components/animate.scss/scss/animate.scss";
+@import "bower_components/sass-mediaqueries/media-queries";
+
 
 /* Float Clearing
 --------------------------------------------- */
@@ -1249,24 +1253,14 @@ Widgets
 
 /* Simple Social Icons
 --------------------------------------------- */
-.parallax-home .simple-social-icons {
-
-	margin-top: 40px;
-
-	 ul li {
-		margin: 0 20px !important;
-	}
-
-	 ul li a,
-	 ul li a:hover {
-		padding: 30px;
-	}
-}
 
 .simple-social-icons {
 	ul li {
-		float: none !important;
-		display: inline-block !important;
+		float: none;
+		display: inline-block;
+	}
+	body.home .site-header {
+		display: none;
 	}
 }
 
@@ -1567,7 +1561,7 @@ Site Navigation
 
 /* For homepage */
 #homepageNavBg {
-	background: #88BCE4;
+	background: $lightBlue;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -1601,6 +1595,47 @@ Site Navigation
 		display: block;
 		font-family: Montserrat, sans-serif;
 		padding: 1.7em 1em;
+	}
+	&#menu-left-menu-all, &#menu-right-menu-all, &#menu-right-menu-home, &#menu-left-menu-home {
+		@include max-screen($GSnav) {
+			display: none;
+		}
+	}
+}
+#mobileNavOpen {
+	display: none;
+	position: absolute;
+	color: #FFF;
+	right: 1em;
+	top: 25%;
+	font-size: 2em;
+	cursor: pointer;
+	@include transition(all 0.4s ease-in-out);
+
+	&:hover {
+		color: #002b5c;
+	}
+
+	@include max-screen($GSnav) {
+		display: block;
+	}	
+}
+
+#jPanelMenu-menu {
+
+	.logged-in & {
+		margin-top: 46px;
+	}
+
+	> li > a {
+		font-size: 18px;
+		padding: 1.7em 1em;
+	}
+
+	.simple-social-icons .alignleft {
+		float: none;
+		width: 100%;
+		text-align: center;
 	}
 }
 
@@ -1762,7 +1797,14 @@ body.home.page .wrap {
 }
 
 header .wrap {
+	
 	height: 70px;
+	
+	body.home & {
+		@include max-screen($GSnav) {
+			background: $lightBlue;			
+		}
+	}
 }
 
 #text-2 {
@@ -2407,6 +2449,10 @@ div.logos img:hover {
 
 #text-7 {
 	width: 5%;
+	@include max-screen($GSnav){
+		width: auto;
+		float: none;
+	}
 }
 
 .gridfx {
