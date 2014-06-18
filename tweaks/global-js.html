@@ -56,12 +56,15 @@
 (function animatedBgHomepage($){
 	
 	var $body = $('body');
+	var $background = $('<div id="homepageNavBg"></div>');
 	
 	if($body.hasClass('home')) {
-		$body.prepend('<div id="homepageNavBg"></div>');
+		$body.prepend($background);
 		
 		$('.home-section-2').waypoint(function(){
-			$('#homepageNavBg').toggleClass('online');
+			if ($body.width()>=1180) {
+				$background.toggleClass('online');			
+			};
 		});
 	}
 
@@ -70,7 +73,7 @@
 (function sideMenu($){
 
 	// Add mobile icon
-	$('.site-header').find('.wrap').append('<a class="fa fa-bars" id="mobileNavOpen"></a>');
+	$('.site-header').find('.wrap').append('<a class="fa fa-bars" id="mobileNavOpen" href="Javascript:void(0);"></a>');
 
 	// Create a hidden div that unites all navigation lnks
 	var $hiddenNav = $('<ul id="hiddenNav" style="display:none;"></ul>');
