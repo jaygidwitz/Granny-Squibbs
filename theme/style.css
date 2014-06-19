@@ -4688,8 +4688,36 @@ body.home.parallax-home .site-header {
   background: none;
 }
 
+body.home.parallax-home #nav_menu-2, body.home.parallax-home #nav_menu-3 {
+  width: 50%;
+  -webkit-transition: width 1.5s ease-out;
+  -moz-transition: width 1.5s ease-out;
+  transition: width 1.5s ease-out;
+}
+body.home.parallax-home #nav_menu-2.online, body.home.parallax-home #nav_menu-3.online {
+  width: 47.5%;
+}
+body.home.parallax-home #nav_menu-2 {
+  float: left;
+  clear: none;
+}
+body.home.parallax-home #nav_menu-3 {
+  float: right;
+}
 body.home.parallax-home section#text-7 {
-  display: none;
+  width: 0%;
+  opacity: 0;
+  -webkit-transition: width 1.5s ease-out, opacity 0.5s ease-out;
+  -moz-transition: width 1.5s ease-out, opacity 0.5s ease-out;
+  transition: width 1.5s ease-out, opacity 0.5s ease-out;
+}
+body.home.parallax-home section#text-7.online {
+  width: 5%;
+  opacity: 1;
+}
+body.home.parallax-home section#text-7 a {
+  width: 100%;
+  display: block;
 }
 
 body.home.parallax-home #menu-left-menu.genesis-nav-menu .menu-item {
@@ -4700,10 +4728,6 @@ body.home.parallax-home #menu-left-menu.genesis-nav-menu .menu-item {
 body.home.parallax-home #menu-right-menu.genesis-nav-menu .menu-item {
   float: right;
   margin-right: 40px;
-}
-
-body.home.parallax-home #nav_menu-3 {
-  float: right;
 }
 
 body.home.parallax-home .site-header .widget-area {
@@ -5129,6 +5153,9 @@ Widgets
 
 /* Simple Social Icons
 --------------------------------------------- */
+.simple-social-icons.not-home {
+  margin-top: 10px;
+}
 .simple-social-icons ul li {
   float: none;
   display: inline-block;
@@ -5140,6 +5167,24 @@ body.home .site-header .simple-social-icons {
   body.home .site-header .simple-social-icons {
     display: none;
   }
+}
+.site-header .widget-area .simple-social-icons ul li a,
+.site-header .widget-area .simple-social-icons ul li a:hover, #jPanelMenu-menu .simple-social-icons ul li a,
+#jPanelMenu-menu .simple-social-icons ul li a:hover {
+  background: none !important;
+  border-radius: 3px;
+  color: #002b5c !important;
+  font-size: 20px;
+  padding: 9px;
+}
+.simple-social-icons .alignleft {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+.simple-social-icons .social-facebook, .simple-social-icons .social-twitter, .simple-social-icons .social-instagram {
+  clear: both;
+  float: none;
 }
 
 /*
@@ -5367,19 +5412,6 @@ Site Header
   width: 90%;
 }
 
-.site-header .widget-area .simple-social-icons ul li a,
-.site-header .widget-area .simple-social-icons ul li a:hover {
-  background: none !important;
-  border-radius: 3px;
-  color: #002b5c !important;
-  font-size: 20px;
-  padding: 9px;
-}
-
-body.home .site-header .simple-social-icons {
-  margin-top: 0.95em;
-}
-
 /* Title Area
 --------------------------------------------- */
 .title-area {
@@ -5524,6 +5556,12 @@ body.logged-in #homepageNavBg {
 .logged-in #jPanelMenu-menu {
   margin-top: 46px;
 }
+#jPanelMenu-menu > li {
+  border-bottom: 2px rgba(11, 11, 63, 0.11) solid;
+}
+#jPanelMenu-menu > li:first-child {
+  border-top: 2px rgba(11, 11, 63, 0.11) solid;
+}
 #jPanelMenu-menu > li > a {
   font-size: 18px;
   padding: 0.5em 1em;
@@ -5534,12 +5572,6 @@ body.logged-in #homepageNavBg {
 #jPanelMenu-menu > li > a:hover {
   color: white;
   background: #012b5c;
-}
-#jPanelMenu-menu .simple-social-icons .alignleft {
-  float: none;
-  width: 100%;
-  text-align: center;
-  margin-left: 12px;
 }
 
 #menu-right-menu.genesis-nav-menu .menu-item {
@@ -5645,12 +5677,6 @@ aside.header-widget-area {
   width: 100%;
   float: none;
   margin: 0 auto;
-}
-
-#nav_menu-2 {
-  float: left;
-  clear: none;
-  width: 50%;
 }
 
 section#nav_menu-2 nav ul#menu-left-menu-home li.menu-item {
@@ -6285,17 +6311,16 @@ table tbody {
   border: none;
 }
 
-div.logos img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  -ms-transition-duration: 0.4s;
-}
-
+/*div.logos img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	-ms-transition-duration: 0.4s;
+} */
 div.logos img:hover {
   -webkit-filter: grayscale(0%);
   -o-filter: grayscale(0%);
