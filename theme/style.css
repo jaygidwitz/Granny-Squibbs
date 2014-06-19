@@ -5132,30 +5132,10 @@ Widgets
 .simple-social-icons ul li {
   float: none;
   display: inline-block;
-<<<<<<< HEAD
 }
 body.home .site-header .simple-social-icons {
   margin-top: 0.95em;
 }
-
-
-.site-header .widget-area .simple-social-icons ul li a,
-.site-header .widget-area .simple-social-icons ul li a:hover {
-	background: none !important;
-	border-radius: 3px;
-	color: #002b5c !important;
-	font-size: 20px;
-	padding: 9px;
-}
-
-
-
-=======
-}
-body.home .site-header .simple-social-icons {
-  margin-top: 0.95em;
-}
->>>>>>> FETCH_HEAD
 @media screen and (max-width: 1180px) {
   body.home .site-header .simple-social-icons {
     display: none;
@@ -5385,6 +5365,19 @@ Site Header
 .site-header aside {
   margin: 0 auto;
   width: 90%;
+}
+
+.site-header .widget-area .simple-social-icons ul li a,
+.site-header .widget-area .simple-social-icons ul li a:hover {
+  background: none !important;
+  border-radius: 3px;
+  color: #002b5c !important;
+  font-size: 20px;
+  padding: 9px;
+}
+
+body.home .site-header .simple-social-icons {
+  margin-top: 0.95em;
 }
 
 /* Title Area
@@ -6292,11 +6285,7 @@ table tbody {
   border: none;
 }
 
-<<<<<<< HEAD
-/*div.logos img {
-=======
 div.logos img {
->>>>>>> FETCH_HEAD
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
@@ -6317,7 +6306,7 @@ div.logos img:hover {
   -o-transition-duration: 0.4s;
   -ms-transition-duration: 0.4s;
   z-index: 2px;
-}*/
+}
 
 .blue {
   color: #002b5c;
