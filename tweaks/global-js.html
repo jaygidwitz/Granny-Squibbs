@@ -40,16 +40,34 @@
 	
 	var $body = $('body');
 	var $background = $('<div id="homepageNavBg"></div>');
+	var $squibbsImg = $('#text-7');
 	
 	if($body.hasClass('home')) {
 		$body.prepend($background);
+
+		var $navAndBg = $background.add($('#nav_menu-2, #nav_menu-3')).add($squibbsImg);
 		
 		$('.home-section-2').waypoint(function(){
+
 			if ($body.width()>=1180) {
-				
-				$background
-					.add($('#nav_menu-2, #nav_menu-3, #text-7'))
-					.toggleClass('online');
+
+				if (!$squibbsImg.hasClass('online')) {
+
+					$navAndBg.addClass('online');
+
+					setTimeout(function(){
+						$squibbsImg.find('img').addClass('online');
+					}, 500);
+
+				} else {
+
+					$squibbsImg.find('img').removeClass('online');
+
+					setTimeout(function(){
+						$navAndBg.removeClass('online');
+					}, 500);
+
+				}
 			};
 		});
 	}
@@ -98,6 +116,7 @@
 	var $newLi = $rightMenu.find('li').last().clone();
 
 	$newLi
+		.addClass('simple-social-li')
 		.appendTo($rightMenu)
 		.empty()
 		.append($icons);
