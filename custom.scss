@@ -1414,7 +1414,7 @@ div.homeboxes {
 .boxleft,
 a .boxleft {
 	background-color: #b2deee;
-	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/gs-map-narragansett-bay-2.jpg) no-repeat center;
+	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/our-story.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1428,7 +1428,7 @@ a .boxleft {
 
 .boxleft:hover {
 	background-color: #68a7bd;
-	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/gs-map-narragansett-bay.jpg) no-repeat center;
+	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/our-story-hover.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1437,7 +1437,16 @@ a .boxleft {
 }
 
 .boxcenter {
-	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/squibbwreck-middle-home.jpg) no-repeat center;
+	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #b2deee;
+}
+
+.boxcenter:hover {
+	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-hover.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1520,12 +1529,12 @@ a .boxleft {
 }
 
 .boxright {
-	background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/grannysquibbs-2.jpg");
+	background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/hashtag-grannysquibbs.jpg");
 	background-color: #b2deee;
 }
 
 .boxright:hover {
-	background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/grannysquibbs-2.jpg");
+	background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/hashtag-grannysquibbs-hover.jpg");
 	transition: none;
 	background-color: #68a7bd;
 }
