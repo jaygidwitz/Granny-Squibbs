@@ -39,36 +39,15 @@
 (function animatedBgHomepage($){
 	
 	var $body = $('body');
-	var $background = $('<div id="homepageNavBg"></div>');
-	var $squibbsImg = $('#text-7');
 	
-	if($body.hasClass('home')) {
-		$body.prepend($background);
+	if($body.hasClass('home') && $body.width()>=1180) {
 
-		var $navAndBg = $background.add($('#nav_menu-2, #nav_menu-3')).add($squibbsImg);
-		
+		var $background = $('<div id="homepageNavBg"></div>');
+		$('#nav_menu-2, #text-7, #nav_menu-3').clone().appendTo($background);
+		$background.prependTo($body);
+
 		$('.home-section-2').waypoint(function(){
-
-			if ($body.width()>=1180) {
-
-				if (!$squibbsImg.hasClass('online')) {
-
-					$navAndBg.addClass('online');
-
-					setTimeout(function(){
-						$squibbsImg.find('img').addClass('online');
-					}, 500);
-
-				} else {
-
-					$squibbsImg.find('img').removeClass('online');
-
-					setTimeout(function(){
-						$navAndBg.removeClass('online');
-					}, 500);
-
-				}
-			};
+			$background.toggleClass('online');
 		});
 	}
 

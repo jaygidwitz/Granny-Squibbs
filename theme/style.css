@@ -4690,12 +4690,6 @@ body.home.parallax-home .site-header {
 
 body.home.parallax-home #nav_menu-2, body.home.parallax-home #nav_menu-3 {
   width: 50%;
-  -webkit-transition: width 0.5s ease-out;
-  -moz-transition: width 0.5s ease-out;
-  transition: width 0.5s ease-out;
-}
-body.home.parallax-home #nav_menu-2.online, body.home.parallax-home #nav_menu-3.online {
-  width: 47.5%;
 }
 body.home.parallax-home #nav_menu-2 {
   float: left;
@@ -4704,29 +4698,8 @@ body.home.parallax-home #nav_menu-2 {
 body.home.parallax-home #nav_menu-3 {
   float: right;
 }
-body.home.parallax-home section#text-7 {
-  width: 0%;
-  position: relative;
-  -webkit-transition: width 0.5s ease-out;
-  -moz-transition: width 0.5s ease-out;
-  transition: width 0.5s ease-out;
-}
-body.home.parallax-home section#text-7.online {
-  width: 5%;
-}
-body.home.parallax-home section#text-7 img {
-  position: relative;
-  top: -100px;
-  -webkit-transition: top 0.5s ease-out;
-  -moz-transition: top 0.5s ease-out;
-  transition: top 0.5s ease-out;
-}
-body.home.parallax-home section#text-7 img.online {
-  top: 0;
-}
-body.home.parallax-home section#text-7 a {
-  width: 100%;
-  display: block;
+body.home.parallax-home #text-7 {
+  display: none;
 }
 
 body.home.parallax-home #menu-left-menu.genesis-nav-menu .menu-item {
@@ -5169,17 +5142,18 @@ Widgets
   float: none;
   display: inline-block;
 }
-body.home .site-header .simple-social-icons {
+body.home .site-header .simple-social-icons, body.home #homepageNavBg .simple-social-icons {
   margin-top: 0.95em;
 }
 @media screen and (max-width: 1180px) {
-  body.home .site-header .simple-social-icons {
+  body.home .site-header .simple-social-icons, body.home #homepageNavBg .simple-social-icons {
     display: none;
   }
 }
 .site-header .widget-area .simple-social-icons ul li a,
 .site-header .widget-area .simple-social-icons ul li a:hover, #jPanelMenu-menu .simple-social-icons ul li a,
-#jPanelMenu-menu .simple-social-icons ul li a:hover {
+#jPanelMenu-menu .simple-social-icons ul li a:hover, #homepageNavBg .simple-social-icons ul li a,
+#homepageNavBg .simple-social-icons ul li a:hover {
   background: none !important;
   border-radius: 3px;
   color: #002b5c !important;
@@ -5516,19 +5490,30 @@ Site Navigation
 #homepageNavBg {
   background: #88bce4;
   position: fixed;
-  top: 0;
+  top: -100px;
   width: 100%;
-  height: 0px;
-  z-index: 1;
+  height: 70px;
+  z-index: 1000;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  /* For Homepage logged in */
 }
 #homepageNavBg.online {
-  height: 70px;
+  top: 0px;
 }
 body.logged-in #homepageNavBg {
+  top: -68px;
+}
+body.logged-in #homepageNavBg.online {
   top: 32px;
+}
+#homepageNavBg #nav_menu-2, #homepageNavBg #nav_menu-3 {
+  width: 47.5%;
+}
+#homepageNavBg #text-7 {
+  width: 5%;
+  display: block;
 }
 
 .genesis-nav-menu {

@@ -811,11 +811,6 @@ body.home.parallax-home {
 
 	#nav_menu-2, #nav_menu-3 {
 		width: 50%;
-		@include transition(width 0.5s ease-out);
-
-		&.online {
-			width: 47.5%;		
-		}
 	}
 
 	#nav_menu-2 {
@@ -827,30 +822,9 @@ body.home.parallax-home {
 		float: right;
 	}
 
-	section#text-7 {
-		width: 0%;
-		position: relative;
-		@include transition(width 0.5s ease-out);
-
-		&.online {
-			width: 5%;
-		}
-
-		img {
-			position: relative;
-			top: -100px;
-			@include transition(top 0.5s ease-out);
-			&.online {
-				top: 0;
-			}
-		}
-		
-		a {
-			width: 100%;
-			display: block;
-		}
+	#text-7 {
+		display: none;
 	}
-
 } 
 
 
@@ -1303,7 +1277,7 @@ Widgets
 		display: inline-block;
 	}
 
-	body.home .site-header & {
+	body.home .site-header &, body.home #homepageNavBg & {
 		margin-top: 0.95em;
 
 		@include max-screen($GSnav) {
@@ -1311,7 +1285,7 @@ Widgets
 		}
 	}
 
-	.site-header .widget-area &, #jPanelMenu-menu & {
+	.site-header .widget-area &, #jPanelMenu-menu &, #homepageNavBg & {
 		
 		ul li a,
 		ul li a:hover {
@@ -1657,18 +1631,32 @@ Site Navigation
 #homepageNavBg {
 	background: $lightBlue;
 	position: fixed;
-	top: 0;
+	top: -100px;
 	width: 100%;
-	height: 0px;
-	z-index: 1;
+	height: 70px;
+	z-index: 1000;
 	@include transition(all 0.5s ease-in-out);
 
 	&.online {
-		height: 70px;
+		top: 0px;
 	}
 
+	/* For Homepage logged in */
 	body.logged-in & {
-		top: 32px;
+		top: -68px;
+
+		&.online {
+			top: 32px;
+		}
+
+	}
+
+	#nav_menu-2, #nav_menu-3 {
+		width: 47.5%;
+	}
+	#text-7 {
+		width: 5%;
+		display: block;
 	}
 }
 
