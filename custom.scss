@@ -1689,7 +1689,7 @@ Site Navigation
 				display: none;
 			}
 
-			&.simple-social-li {
+			&.simple-social-li, .simple-social-icons {
 				@include max-screen($GSnav) {
 					display: block;				
 				}
@@ -1697,6 +1697,7 @@ Site Navigation
 		}
 	}
 }
+
 #mobileNavOpen {
 	display: none;
 	position: absolute;
@@ -1876,12 +1877,6 @@ section#nav_menu-3 nav ul#menu-right-menu-home li.menu-item {
 }
 
 body.home.page {
-
-	.site-header {
-		@include max-screen($GSnav){
-			height: 70px;
-		}
-	}
 
 	.wrap {
 		width: 100%;
@@ -4061,7 +4056,6 @@ Media Queries
 			background-color: #8abbe4;
 			width: 100%;
 			z-index: 999;
-			height: 130px;
 			overflow: visible;
 		}
 

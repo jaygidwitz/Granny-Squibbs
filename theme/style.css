@@ -5543,7 +5543,7 @@ body.logged-in #homepageNavBg.online {
   }
 }
 @media screen and (max-width: 1180px) {
-  .genesis-nav-menu#menu-left-menu-all .menu-item.simple-social-li, .genesis-nav-menu#menu-right-menu-all .menu-item.simple-social-li, .genesis-nav-menu#menu-right-menu-home .menu-item.simple-social-li, .genesis-nav-menu#menu-left-menu-home .menu-item.simple-social-li {
+  .genesis-nav-menu#menu-left-menu-all .menu-item.simple-social-li, .genesis-nav-menu#menu-left-menu-all .menu-item .simple-social-icons, .genesis-nav-menu#menu-right-menu-all .menu-item.simple-social-li, .genesis-nav-menu#menu-right-menu-all .menu-item .simple-social-icons, .genesis-nav-menu#menu-right-menu-home .menu-item.simple-social-li, .genesis-nav-menu#menu-right-menu-home .menu-item .simple-social-icons, .genesis-nav-menu#menu-left-menu-home .menu-item.simple-social-li, .genesis-nav-menu#menu-left-menu-home .menu-item .simple-social-icons {
     display: block;
   }
 }
@@ -5722,11 +5722,6 @@ section#nav_menu-3 nav ul#menu-right-menu-home li.menu-item {
   width: 47.5%;
 }
 
-@media screen and (max-width: 1180px) {
-  body.home.page .site-header {
-    height: 70px;
-  }
-}
 body.home.page .wrap {
   width: 100%;
   max-width: 100%;
@@ -7878,7 +7873,6 @@ Media Queries
     background-color: #8abbe4;
     width: 100%;
     z-index: 999;
-    height: 130px;
     overflow: visible;
   }
 

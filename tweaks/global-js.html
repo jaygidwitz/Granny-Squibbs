@@ -63,7 +63,19 @@
 	var $hiddenNavContent;
 
 	if ($('body').hasClass('home')) {
-		$hiddenNavContent = $('#menu-left-menu-home, #menu-right-menu-home');
+
+		var $temp;
+
+		$hiddenNavContent = $('#menu-left-menu-home').clone().detach();
+		$hiddenNavContent.children('li').each(function(){
+			var $this = $(this);
+			$this.prependTo($this.parent());
+		});
+
+		$temp = $('#menu-right-menu-home').clone().detach();
+		$hiddenNavContent.append($temp.children('li'));
+
+
 	} else {
 		$hiddenNavContent = $('#menu-left-menu-all, #menu-right-menu-all');
 	}
@@ -77,6 +89,7 @@
 		trigger: '#mobileNavOpen',
 		direction: 'right'
 	});
+
 	jPM.on();
 
 })(jQuery);
