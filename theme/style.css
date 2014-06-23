@@ -5403,11 +5403,12 @@ Site Header
   position: fixed;
   width: 100%;
   z-index: 999;
-  /* opacity: .7; */
   color: black;
   height: 70px;
 }
-
+body.home .site-header {
+  position: absolute;
+}
 .site-header aside {
   margin: 0 auto;
   width: 90%;
