@@ -29,8 +29,14 @@ function parallax_enqueue_scripts_styles() {
 	wp_enqueue_script( 'waypoints', get_bloginfo( 'stylesheet_directory' ) . '/js/waypoints.min.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'waypoints-sticky', get_bloginfo( 'stylesheet_directory' ) . '/js/waypoints-sticky.min.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'waypoints-script', get_bloginfo( 'stylesheet_directory' ) . '/js/waypoints-script.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_script( 'preloadcssimages', get_bloginfo( 'stylesheet_directory' ) . '/js/preloadCssImages.jQuery_v5.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_script( 'preloadload', get_bloginfo( 'stylesheet_directory' ) . '/js/preloadload.js', array( 'jquery' ), '1.0.0' );
+	//wp_enqueue_script( 'preloadcssimages', get_bloginfo( 'stylesheet_directory' ) . '/js/preloadCssImages.jQuery_v5.js', array( 'jquery' ), '1.0.0' );
+	//wp_enqueue_script( 'preloadload', get_bloginfo( 'stylesheet_directory' ) . '/js/preloadload.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'retinajs', get_bloginfo( 'stylesheet_directory' ) . '/js/retina.min.js', array( 'jquery' ), '1.3.0', 'in_footer' );
+	wp_enqueue_script( 'jpanelmenu', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.jpanelmenu.min.js', array( 'jquery' ), '1.3.0', 'in_footer' );
+	wp_enqueue_script( 'prada', get_bloginfo( 'stylesheet_directory' ) . '/js/prada.js', array( 'jquery' ), '1.3.0', 'in_footer' );
+
+
+
 
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'parallax-google-fonts', '//fonts.googleapis.com/css?family=Montserrat|Lobster+Two', array(), CHILD_THEME_VERSION );

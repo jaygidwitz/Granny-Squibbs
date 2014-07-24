@@ -4035,10 +4035,10 @@ input[type="search"] {
 }
 
 .animated.wiggle {
-  -webkit-animation-duration: 0.5;
-  -moz-animation-duration: 0.5;
-  -o-animation-duration: 0.5;
-  animation-duration: 0.5;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 @keyframes wobble {
@@ -4236,7 +4236,7 @@ body.page-id-2 {
 	background: url('http://squibbs.wpengine.com/wp-content/uploads/2014/04/beach.jpg') no-repeat center center fixed;
 	background-size: cover;
 	}*/
-body.page-id-2 .full-width-content .content,
+.page-id-2 .full-width-content .content,
 .breadcrumb {
   padding: 0;
   width: 100%;
@@ -4245,27 +4245,39 @@ body.page-id-2 .full-width-content .content,
   float: none;
 }
 
-body.page-id-9 .breadcrumb {
+.page-id-9 .breadcrumb {
   padding: 10px 0;
 }
 
-body.page-id-9 section#text-12 div.widget-wrap {
+.page-id-9 section#text-12 div.widget-wrap {
   max-width: 100%;
 }
 
-body.page-id-5 div.content-sidebar-wrap {
-  margin: 0 20px;
+.page-id-5 .content-sidebar-wrap {
+  margin: 0 15px;
 }
 
-body.page-id-7 .site-inner,
-body.page-id-5 .site-inner {
-  margin: 120px auto 0px;
-  max-width: 1340px;
+.page-id-7 .site-inner,
+.page-id-5 .site-inner {
+  margin: 120px auto 0;
+  max-width: 1140px;
 }
 
-body.page-id-2 .site-inner {
-  margin: 0px auto 0px;
-  max-width: 100%px;
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+	body.page-id-5 .site-inner {
+		margin: 90px auto;
+	}
+}
+
+@media screen and (max-width: 1022px) {
+	body.page-id-5 .site-inner {
+		margin: 20px auto;
+	}
+}
+
+.page-id-2 .site-inner {
+  margin: 0 auto 0;
+  max-width: 100%;
 }
 
 body.page-id-2 main.content {
@@ -4273,13 +4285,31 @@ body.page-id-2 main.content {
 }
 
 article.post-11 {
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 1140px;
 }
 
 article.post-7 {
   text-align: center;
 }
+
+article.post-7 div.one-third {
+  text-align: center;
+}
+
+article.post-7 div.one-third h5 {
+  text-align: center;
+}
+
+.page-id-7 div.one-third strong {
+	text-align: center;
+}
+
+body.page-id-7 span.blue {
+	margin-left: 0;
+}
+
+
 
 article.post-7 hr.orangeline {
   margin: 20px auto !important;
@@ -4290,35 +4320,166 @@ div.sixty {
   margin: 0 auto;
 }
 
+.our-teas-sixty {
+	font-weight: 400;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.our-teas-sixty {
+		width: 100%;
+	}
+	
+}
+
+@media only screen and (max-width: 1024px) {
+	.page-id-4 .site-inner {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.page-id-4 .entry {
+		margin-bottom: 20px;
+	}
+	
+}
+
 article.post-7 div.gform_wrapper input[type="email"],
 article.post-7 div.gform_wrapper input[type="text"],
 article.post-7 div.gform_wrapper textarea,
 article.post-7 div.gform_wrapper .ginput_complex label {
-  font-size: 16px;
-  padding: 8px;
+  font-size: 14px;
+  padding: 6px;
+}
+
+.gform_wrapper .top_label .gfield_label {
+	font-weight: 100;
 }
 
 article.post-7 p.address {
-  text-align: left;
+  text-align: center;
 }
 
 article.post-7 p.address i.fa {
   margin-right: 8px;
 }
 
-body.page-id-2 article,
-body.page-id-39 main.content {
-  max-width: 1140px;
-  margin: 0px auto 40px;
+.post-2 {
+  max-width: 100%;
+  margin: 0 0 40px;
   float: none;
 }
 
+body.page-id-39 main.content {
+	max-width: 800px;
+	margin: 0px auto 40px;
+	float: none;
+}
+
+body.page-id-39 .gform_title,
+body.page-id-39 span.gform_description {
+	text-align: center;
+}
+
+body.page-id-11 .site-inner {
+	min-height: 1205px;
+}
+
+body.page-id-263 div.gridfx-1,
+body.page-id-264 div.entry-content {
+	min-height: 748px;
+}
+
+.blog-yumprint-header,
+.blog-yumprint-recipe .blog-yumprint-save,
+.blog-yumprint-stars-reviews {
+	height: 0px !important;
+	left: -99999px;
+}
 .post-2 header {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+article.type-recipe {
+	max-width: 940px;
+	margin: 0 auto;
 }
 
 body.page-id-4 header.entry-header {
   display: none;
+}
+
+body.single-recipe main.content{
+	max-width: 1140px;
+	margin: 0 auto;
+	float: none;
+}
+
+.wpurp-footer,
+p.entry-meta {
+	display: none;
+}
+
+.wpurp-container {
+	background: #fff !important;
+	max-width: 800px !important;
+	border-radius: 8px;
+	border-color: #fff !important;
+	padding: 20px !important;
+}
+
+div.gridfx-1 div.gridfx-overlay-title-v2 .mini-title {
+	color: #002b5c !important;
+}
+
+div#wpseo-storelocator-results {
+	margin-bottom: 40px;
+}
+
+twine-item.promo {
+	display: none;
+}
+
+body.page-id-39 .breadcrumb {
+	display: none;
+}
+
+body.page-id-39 article {
+	margin-top: 30px;
+}
+
+ol.recipe-instructions {
+	max-height: 400px;
+	float: none;
+}
+
+ol img {
+	max-height: 300px;
+}
+
+div.comment-respond {
+	max-width: 800px;
+	margin: 0 auto 40px;
+}
+
+h3.comment-reply-title {
+	font-size: 20px;
+	margin: 30px 0 20px;
+}
+
+body.single-recipe,
+body.page-id-263,
+body.page-id-264,
+body.single-post {
+	background-color: #f0f6fa;
+}
+
+iframe.fb_iframe_widget_lift {
+	max-width: none !important;
 }
 
 a,
@@ -4609,11 +4770,12 @@ h2.lobster {
   border: 3px solid #666;
   }*/
 .home-section-4 a.button {
-  font-size: 18px;
-  padding: 10px 18px;
-  border: 3px solid #002b5c;
-  clear: left;
-  color: #002b5c;
+	font-size: 18px;
+	padding: 10px 18px;
+	border: 3px solid #fcca76;
+	clear: left;
+	color: #002b5c;
+	background-color: #fcca76;
 }
 
 .home-section-4 a.button:hover {
@@ -4650,12 +4812,17 @@ th {
 }
 
 td {
-  border-top: 1px solid #ddd;
-  padding: 6px 0;
+ /* border-top: 1px solid #ddd;*/
+  padding: 0px 0;
+  min-width: 20px;
 }
 
 th {
   font-weight: 700;
+}
+
+strong.marg {
+	margin-left: 22px;
 }
 
 /*
@@ -4690,12 +4857,6 @@ body.home.parallax-home .site-header {
 
 body.home.parallax-home #nav_menu-2, body.home.parallax-home #nav_menu-3 {
   width: 50%;
-  -webkit-transition: width 1.5s ease-out;
-  -moz-transition: width 1.5s ease-out;
-  transition: width 1.5s ease-out;
-}
-body.home.parallax-home #nav_menu-2.online, body.home.parallax-home #nav_menu-3.online {
-  width: 47.5%;
 }
 body.home.parallax-home #nav_menu-2 {
   float: left;
@@ -4704,20 +4865,8 @@ body.home.parallax-home #nav_menu-2 {
 body.home.parallax-home #nav_menu-3 {
   float: right;
 }
-body.home.parallax-home section#text-7 {
-  width: 0%;
-  opacity: 0;
-  -webkit-transition: width 1.5s ease-out, opacity 0.5s ease-out;
-  -moz-transition: width 1.5s ease-out, opacity 0.5s ease-out;
-  transition: width 1.5s ease-out, opacity 0.5s ease-out;
-}
-body.home.parallax-home section#text-7.online {
-  width: 5%;
-  opacity: 1;
-}
-body.home.parallax-home section#text-7 a {
-  width: 100%;
-  display: block;
+body.home.parallax-home #text-7 {
+  display: none;
 }
 
 body.home.parallax-home #menu-left-menu.genesis-nav-menu .menu-item {
@@ -4925,6 +5074,10 @@ body.single-post .entry-header::after {
 div.gridfx-1 div.gridfx-items {
   margin-top: 0px !important;
   padding-top: 0px !important;
+}
+
+.larger {
+	font-size: 140%
 }
 
 /* Search Form
@@ -5160,27 +5313,43 @@ Widgets
   float: none;
   display: inline-block;
 }
-body.home .site-header .simple-social-icons {
+body.home .site-header .simple-social-icons, body.home #homepageNavBg .simple-social-icons {
   margin-top: 0.95em;
 }
-@media screen and (max-width: 1180px) {
-  body.home .site-header .simple-social-icons {
+@media screen and (max-width: 1279px) {
+  body.home .site-header .simple-social-icons,
+  body.home #homepageNavBg .simple-social-icons {
     display: none;
   }
 }
 .site-header .widget-area .simple-social-icons ul li a,
 .site-header .widget-area .simple-social-icons ul li a:hover, #jPanelMenu-menu .simple-social-icons ul li a,
-#jPanelMenu-menu .simple-social-icons ul li a:hover {
+#jPanelMenu-menu .simple-social-icons ul li a:hover, #homepageNavBg .simple-social-icons ul li a,
+#homepageNavBg .simple-social-icons ul li a:hover {
   background: none !important;
   border-radius: 3px;
-  color: #002b5c !important;
+  color: #fff !important;
   font-size: 20px;
   padding: 9px;
 }
+
+body.home .site-header .widget-area .simple-social-icons ul li a {
+  color: #002b5c !important;
+}
+
 .simple-social-icons .alignleft {
   float: none;
   width: 100%;
   text-align: left;
+}
+@media screen and (max-width: 1279px) {
+  .simple-social-icons .alignleft {
+    text-align: left;
+    position: absolute;
+    margin: 0 auto;
+    left: 10px;
+    top: 17px;
+  }
 }
 .simple-social-icons .social-facebook, .simple-social-icons .social-twitter, .simple-social-icons .social-instagram {
   clear: both;
@@ -5263,12 +5432,58 @@ div.homeboxes {
   height: 414px;
   margin: 0 1%;
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
   div.homeboxes {
     float: none;
     width: 91%;
     margin: 1em auto;
+	max-width: 359px;
   }
+}
+
+.homeboxes h1.title-lined {
+	text-transform: none;
+}
+
+.homeboxes div.hide {
+	display: none;
+}
+
+.homeboxes:hover div.hide {
+	display: block;
+}
+
+.homeboxes img.small {
+	width: 30%;
+	height: 30%;
+}
+
+.homeboxes img.title-lined {
+
+
+}
+
+
+img.title-lined:before {
+	margin-left: -50%;
+	right: .5em;
+}
+
+img.title-lined:after {
+	left: .5em;
+	margin-right: -50%;
+}
+
+img.title-lined:before,
+img.title-lined:after {
+	background-color: #fcca76;
+	content: '';
+	display: inline-block;
+	height: 2px;
+	position: relative;
+	top: -4px;
+	vertical-align: middle;
+	width: 50%;
 }
 
 .boxleft,
@@ -5286,9 +5501,9 @@ a .boxleft {
   padding: 18px 24px;
 }
 
+
 .boxleft:hover {
   background-color: #68a7bd;
-  background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/our-story-hover.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5306,7 +5521,6 @@ a .boxleft {
 }
 
 .boxcenter:hover {
-  background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-hover.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5321,13 +5535,13 @@ a .boxleft {
 }
 
 .boxcenter p {
-  padding: 0px 24px;
+  padding: 0 24px;
   color: #002b5c;
   font-size: 40%;
 }
 
 .boxcenter img {
-  padding: 0px auto;
+  padding: 0 auto;
   float: none;
   color: #002b5c;
   font-size: 70%;
@@ -5336,7 +5550,7 @@ a .boxleft {
 }
 
 .boxcenter p:hover {
-  padding: 0px 24px;
+  padding: 0 24px;
   color: #fcca76;
 }
 
@@ -5344,6 +5558,44 @@ a .boxleft {
   background-color: #68a7bd;
 }
 
+h2.grey {
+	color: #555;
+}
+
+h2.strong {
+	font-weight: bolder;
+}
+
+
+section#text-15 {
+  background: url("http://squibbs.wpengine.com/wp-content/uploads/2014/05/1015204_10151740011248530_1581506400_o-1-e1400550892777.jpg");
+  background-attachment: fixed;
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+section#text-15 .widget-wrap .textwidget {
+  padding: 50px;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+
+section#text-15 .widget-wrap .textwidget img {
+  height: 60px;
+  width: 60px;
+}
+
+section#text-15 h3 {
+  color: white;
+  text-transform: uppercase;
+}
+
+/*
 .boxcenter .mask a.button {
   font-size: 18px;
   padding: 10px 18px;
@@ -5384,7 +5636,7 @@ a .boxleft {
   -o-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
-}
+}*/
 
 .boxright {
   background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/hashtag-grannysquibbs.jpg");
@@ -5392,406 +5644,115 @@ a .boxleft {
 }
 
 .boxright:hover {
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/hashtag-grannysquibbs-hover.jpg");
+ /* background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/hashtag-grannysquibbs-hover.jpg");*/
   transition: none;
   background-color: #68a7bd;
 }
 
-/* Jetpack
---------------------------------------------- */
-#wpstats {
-  display: none;
+
+
+.homeboxes .boxcontent {
+	background-color: #fff;
+	bottom: 0;
+	height: 104px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	padding: 26px 24px;
 }
 
-/*
-Site Header
----------------------------------------------------------------------------------------------------- */
-.site-header {
-  background-color: #8abbe4;
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  /* opacity: .7; */
-  color: black;
-  height: 70px;
+.boxcontent {
+    transition: height .25s ease-out;
 }
 
-.site-header aside {
-  margin: 0 auto;
-  width: 90%;
-}
-
-/* Title Area
---------------------------------------------- */
-.title-area {
-  float: left;
-  padding: 20px 0;
-  width: 360px;
-  display: none;
-}
-
-.header-full-width .title-area {
-  width: 100%;
-}
-
-.site-title {
-  font-family: Montserrat, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 1;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.site-title a,
-.site-title a:hover {
-  color: #fff !important;
-}
-
-.header-image .title-area {
-  padding: 0;
-}
-
-.header-image .site-title > a {
-  background-size: contain !important;
-  display: block;
-  height: 70px;
-  text-indent: -9999px;
-  max-width: 360px;
-}
-
-.site-description {
-  display: block;
-  height: 0;
-  margin-bottom: 0;
-  text-indent: -9999px;
-}
-
-/* Widget Area
---------------------------------------------- */
-.site-header .widget-area {
-  float: none;
-  text-align: center;
-  width: 100%;
-}
-
-.site-header .widget-area,
-.site-header .widget-area a {
-  color: #012b5c;
-  margin: 0 auto;
-  max-width: 1140px;
-}
-
-.site-header .widget-area a:hover {
-  color: #f04848;
-}
-
-.site-header .textwidget {
-  margin-top: 27px;
-}
-
-/*
-Site Navigation
----------------------------------------------------------------------------------------------------- */
-/* For homepage */
-#homepageNavBg {
-  background: #88bce4;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 0px;
-  z-index: 1;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-#homepageNavBg.online {
-  height: 70px;
-}
-body.logged-in #homepageNavBg {
-  top: 32px;
-}
-
-.genesis-nav-menu {
-  clear: both;
-  color: #000;
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 1;
-  width: 100%;
-}
-.genesis-nav-menu .menu-item {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
-.genesis-nav-menu a {
-  color: #fff;
-  display: block;
-  font-family: Montserrat, sans-serif;
-  padding: 1.7em 1em;
-}
-@media screen and (max-width: 1180px) {
-  .genesis-nav-menu#menu-left-menu-all, .genesis-nav-menu#menu-right-menu-all, .genesis-nav-menu#menu-right-menu-home, .genesis-nav-menu#menu-left-menu-home {
-    display: none;
-  }
-}
-
-#mobileNavOpen {
-  display: none;
-  position: absolute;
-  color: #FFF;
-  right: 1em;
-  top: 50%;
-  margin-top: -15px;
-  font-size: 2em;
-  cursor: pointer;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-#mobileNavOpen:hover {
+.boxcontent {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #002b5c;
-}
-@media screen and (max-width: 1180px) {
-  #mobileNavOpen {
-    display: block;
-  }
-}
-
-.logged-in #jPanelMenu-menu {
-  margin-top: 46px;
-}
-#jPanelMenu-menu > li {
-  border-bottom: 2px rgba(11, 11, 63, 0.11) solid;
-}
-#jPanelMenu-menu > li:first-child {
-  border-top: 2px rgba(11, 11, 63, 0.11) solid;
-}
-#jPanelMenu-menu > li > a {
-  font-size: 18px;
-  padding: 0.5em 1em;
-  color: #012b5c;
-  text-transform: uppercase;
-  display: block;
-}
-#jPanelMenu-menu > li > a:hover {
-  color: white;
-  background: #012b5c;
-}
-
-#menu-right-menu.genesis-nav-menu .menu-item {
-  float: left;
-}
-
-#menu-left-menu.genesis-nav-menu .menu-item {
-  float: right;
-}
-
-.genesis-nav-menu li li {
-  margin-left: 0;
-}
-
-.genesis-nav-menu a:hover,
-.genesis-nav-menu .sub-menu a:hover,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #fff !important;
-  background-color: #002b5c;
-}
-
-.genesis-nav-menu .current-menu-item > a {
-  color: #fff !important;
-  background-color: #002b5c;
-}
-
-.genesis-nav-menu .current-menu-item.menu-item-44 > a {
-  background: none;
-  color: #002b5c !important;
-}
-
-.genesis-nav-menu > .menu-item > a {
-  text-transform: uppercase;
-}
-
-.genesis-nav-menu .sub-menu {
-  left: -9999px;
-  letter-spacing: 0;
-  opacity: 0;
-  position: absolute;
-  -webkit-transition: opacity .4s ease-in-out;
-  -moz-transition: opacity .4s ease-in-out;
-  -ms-transition: opacity .4s ease-in-out;
-  -o-transition: opacity .4s ease-in-out;
-  transition: opacity .4s ease-in-out;
-  width: 200px;
-  z-index: 99;
-}
-
-.genesis-nav-menu .sub-menu a {
-  background-color: #000;
-  padding: 20px;
-  position: relative;
-  width: 200px;
-}
-
-.genesis-nav-menu .sub-menu .sub-menu {
-  margin: -56px 0 0 199px;
-}
-
-.genesis-nav-menu .menu-item:hover {
-  position: static;
-}
-
-.genesis-nav-menu .menu-item:hover > .sub-menu {
-  left: auto;
-  opacity: 1;
-}
-
-.genesis-nav-menu > .first > a {
-  padding-left: 0;
-}
-
-.genesis-nav-menu > .last > a {
-  padding-right: 0;
-}
-
-.genesis-nav-menu > .right {
-  color: #fff;
-  display: inline-block;
-  list-style-type: none;
-  padding: 27px 20px;
-  text-transform: uppercase;
-}
-
-.genesis-nav-menu > .right > a {
-  display: inline;
-  padding: 0;
-}
-
-.genesis-nav-menu > .rss > a {
-  margin-left: 48px;
-}
-
-.genesis-nav-menu > .search {
-  display: block;
-  margin: 0 auto;
-  padding: 0 20px 20px;
-  width: 50%;
-}
-
-aside.header-widget-area {
+  line-height: 1.2;
+  padding: 18px 24px;
   width: 100%;
-  float: none;
-  margin: 0 auto;
 }
 
-section#nav_menu-2 nav ul#menu-left-menu-home li.menu-item {
-  float: right;
+
+.homeboxes p.ptext {
+	display: none;
+	font-size: .7em;
+	margin-top: 1em;
+	color: #88bce4;
 }
 
-section#nav_menu-3 nav ul#menu-right-menu-home li.menu-item {
-  float: left;
+
+.homeboxes:hover p.ptext {
+    display: inline-block;
+    font-size: 90%;
+    color: #002b5c;
 }
 
-#nav_menu-4 {
-  float: left;
-  clear: none;
-  width: 47.5%;
+
+.homeboxes:hover .boxcontent {
+    background: #fff;
+    color: #51595b;
+    height: 100%
 }
 
-#text-7 {
-  float: left;
-  clear: none;
-  width: 5%;
+@media screen and (max-width: 1279px) {
+
+	.homeboxes:hover .boxcontent {
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			color: #002b5c;
+			line-height: 1.2;
+			padding: 18px 24px;
+			width: 100%;
+			background-color: #fff;
+			bottom: 0;
+			height: 104px;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			padding: 26px 24px;
+	}
+	
+	.boxright .grey.strong {
+		display: none;
+	}
+	
+	div.homeboxes {
+		height: 380px;
+	}
+
 }
 
-#nav_menu-5 {
-  float: left;
-  clear: none;
-  width: 47.5%;
+.touch .homeboxes:hover .boxcontent {
+	background-color: #FFF;
+	bottom: 0px;
+	height: 104px;
+	left: 0px;
+	position: absolute;
+	text-align: center;
+	padding: 26px 24px;
 }
 
-@media screen and (max-width: 1180px) {
-  body.home.page .site-header {
-    height: 70px;
-  }
-}
-body.home.page .wrap {
-  width: 100%;
-  max-width: 100%;
+
+@media screen and (max-width: 1040px) and (min-width: 801px) {
+
+	div.homeboxes div.box-title {
+		font-size: 20px;
+	}
+
 }
 
-#text-8 {
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/white-transparent-7.png");
-  width: 100%;
-  height: 800px;
-}
 
-#text-8 .widget-wrap {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
 
-#text-8 img {
-  padding: 125px 0;
-}
-
-header .wrap {
-  height: 70px;
-}
-@media screen and (max-width: 1180px) {
-  body.home header .wrap {
-    background: #88bce4;
-  }
-}
-
-#text-2 {
-  margin-bottom: 100px;
-}
-#text-2 img {
-  margin-top: 6vh;
-  -webkit-filter: drop-shadow(2px 0px 1px rgba(255, 255, 255, 0.5));
-}
-@media screen and (max-width: 1024px) {
-  #text-2 img {
-    margin-top: 1em;
-  }
-}
-
-#nav_menu-3 {
-  float: left;
-  clear: none;
-  width: 50%;
-}
-
-body.page-id-6 header.entry-header {
-  display: none;
-}
-
-article.post-6 h1 {
-  margin-top: 40px;
-}
-
-.widget-wrap,
-.maxwidth {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-#text-7 .textwidget {
-  margin-top: 0px;
-}
-
-aside.header-widget-area {
-  margin: 0 auto;
-}
-
-/*Grid on Home Page */
-.bignwide {
+/*Grid on Home Page EXtraneous Code*/
+/*.bignwide {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -5808,8 +5769,8 @@ aside.header-widget-area {
   padding-left: 8px;
   padding-right: 8px;
   position: relative;
-}
-
+}*/
+/*
 .homebox {
   border-radius: 6px;
   -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
@@ -5829,7 +5790,7 @@ aside.header-widget-area {
   margin: 10px;
   float: left;
   /* border: 10px solid #fff; */
-  overflow: hidden;
+ /* overflow: hidden;
   position: relative;
   text-align: center;
   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
@@ -5840,7 +5801,7 @@ aside.header-widget-area {
 }
 
 .view .mask,
-.view .content {
+.view .boxcontent {
   width: 355px;
   height: 414px;
   position: absolute;
@@ -6026,7 +5987,7 @@ aside.header-widget-area {
   position: relative;
   height: 414px;
 }
-
+*/
 .nutrition {
   margin: 0 auto;
   margin-bottom: 14px;
@@ -6057,12 +6018,12 @@ aside.header-widget-area {
 .lightblue {
   background-color: #b2deee;
 }
-
+/*
 .type-bg-color .module-link {
   transition: background .25s ease-out;
 }
 
-.type-bg-color .module-content {
+.type-bg-color .boxcontent {
   height: 100%;
   left: 0;
   padding-bottom: 24px;
@@ -6120,11 +6081,11 @@ aside.header-widget-area {
   background-color: #f78f20;
 }
 
-.type-text-bottom .module-content {
+.type-text-bottom .boxcontent {
   transition: height .25s ease-out;
 }
 
-.type-text-bottom .module-content {
+.type-text-bottom .boxcontent {
   background-color: rgba(0, 0, 0, 0.07);
   bottom: 0;
   height: 98px;
@@ -6163,21 +6124,21 @@ aside.header-widget-area {
   display: inline-block;
 }
 
-.type-text-bottom:hover .module-content {
+.type-text-bottom:hover .boxcontent {
   background: #fff;
   color: #51595b;
   height: 50%;
 }
 
-.type-text-bottom.small-font:hover .module-content {
+.type-text-bottom.small-font:hover .boxcontent {
   height: 133px;
 }
 
-.type-text-bottom.small-image:hover .module-content {
+.type-text-bottom.small-image:hover .boxcontent {
   height: 118px;
 }
 
-.type-text-bottom .module-content {
+.type-text-bottom .boxcontent {
   background-color: rgba(48, 44, 148, 0.5);
   bottom: 0;
   height: 98px;
@@ -6186,23 +6147,13 @@ aside.header-widget-area {
   text-align: center;
 }
 
-.module-content {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #fff;
-  line-height: 1.2;
-  padding: 18px 24px;
-  width: 100%;
-}
 
-.bg-social .module-content .module-title {
+
+.bg-social .boxcontent .module-title {
   display: none;
 }
 
-.bg-social .module-content .module-title:hover {
+.bg-social .boxcontent .module-title:hover {
   display: inline;
 }
 
@@ -6228,7 +6179,7 @@ aside.header-widget-area {
   background-color: #73b8a4;
   background: url("http://squibbs.wpengine.com/wp-content/uploads/2014/04/grannysquibbs-2.jpg") center bottom;
   transition: none;
-}
+}*/
 
 .titles {
   -webkit-box-sizing: border-box;
@@ -6252,6 +6203,13 @@ aside.header-widget-area {
   font-family: Montserrat, sans-serif;
   color: #002b5c;
   padding: 0 0 8px 0;
+}
+
+@media only screen and (max-width: 768px) { 
+	.title-lined {
+	  margin: 0;
+	  padding: 0;
+	}
 }
 
 .blue {
@@ -6300,6 +6258,87 @@ span.white a {
   color: #51595b;
 }
 
+@media screen and (max-width: 1000px) {
+	.title-lined:before,
+	.title-lined:after {
+		  display: none;
+	}
+}
+
+@media screen and (max-width: 524px) {
+	.title-lined,
+	h3 {
+		font-size: 20px;
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 481px) {
+	.title-lined,
+	h3 {
+		font-size: 15px;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+	}
+	
+	.titles {
+		margin: 0 auto 0;
+		max-width: 470px;
+		padding: 0;
+	}
+	
+	.home-section-2 .wrap,
+	.home-section-4 .wrap {
+		padding: 0 5px;
+	}
+
+}
+
+
+.lines:before,
+.lines:after {
+  background-color: #eee;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  top: -4px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.lines:before {
+  margin-left: -50%;
+  right: .5em;
+}
+
+.lines:after {
+  left: .5em;
+  margin-right: -50%;
+}
+
+
+.hashtag-grannysquibbs {
+	border-top: 5px solid #eee;
+	border-bottom: 5px solid #eee;
+	padding: .625em 0px;
+	text-align: center;
+	position: relative;
+}
+
+.hashtag-grannysquibbs p .back {
+	background: #fff;
+	display: inline-block;
+	padding: 0px .625em;
+}
+
+p.lines {
+	border-bottom: 5px solid #eee;
+}
+
+
+
+/*
 .module.type-generic-content {
   margin: 0 auto;
   margin-bottom: 14px;
@@ -6319,6 +6358,485 @@ table tbody {
   border-top: 0px solid white;
   border: none;
 }
+*/
+
+
+
+
+
+/* Jetpack
+--------------------------------------------- */
+#wpstats {
+  display: none;
+}
+
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+.site-header {
+  background-color: #8abbe4;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  color: black;
+  height: 70px;
+}
+body.home .site-header {
+  position: absolute;
+}
+.site-header aside {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Title Area
+--------------------------------------------- */
+.title-area {
+  float: left;
+  padding: 20px 0;
+  width: 360px;
+  display: none;
+}
+
+.header-full-width .title-area {
+  width: 100%;
+}
+
+.site-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.site-title a,
+.site-title a:hover {
+  color: #fff !important;
+}
+
+.header-image .title-area {
+  padding: 0;
+}
+
+.header-image .site-title > a {
+  background-size: contain !important;
+  display: block;
+  height: 70px;
+  text-indent: -9999px;
+  max-width: 360px;
+}
+
+.site-description {
+  display: block;
+  height: 0;
+  margin-bottom: 0;
+  text-indent: -9999px;
+}
+
+/* Widget Area
+--------------------------------------------- */
+.site-header .widget-area {
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+
+body.home .site-header .widget-area #nav_menu-2,
+body.home .site-header .widget-area #nav_menu-2 a,
+body.home .site-header .widget-area #nav_menu-3,
+body.home .site-header .widget-area #nav_menu-3 a  {
+  color: #002b5c;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.site-header .widget-area,
+.site-header .widget-area a  {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.site-header .widget-area a:hover {
+  color: #002b5c;
+}
+
+.site-header .textwidget {
+  margin-top: 27px;
+}
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+/* For Homepage sliding down nav element */
+#homepageNavBg {
+  background: #88bce4;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  /* For Homepage logged in */
+}
+#homepageNavBg.online {
+  top: 0px;
+}
+body.logged-in #homepageNavBg {
+  top: -68px;
+}
+body.logged-in #homepageNavBg.online {
+  top: 32px;
+}
+#homepageNavBg #nav_menu-2, #homepageNavBg #nav_menu-3 {
+  width: 47.5%;
+}
+#homepageNavBg #text-7 {
+  width: 5%;
+  display: block;
+}
+
+.genesis-nav-menu {
+  clear: both;
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1;
+  width: 100%;
+}
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.genesis-nav-menu a {
+  color: #fff;
+  display: block;
+  font-family: Montserrat, sans-serif;
+  padding: 1.7em 1em;
+}
+
+.genesis-nav-menu a:hover {
+  color: #002b5c;
+}
+
+@media screen and (max-width: 1279px) {
+
+	#homepageNavBg {
+		  display: none;
+	}
+}
+
+
+@media screen and (max-width: 1279px) and (min-width: 850px) {
+
+	body.home .site-header {
+		/*position: fixed;*/
+	}
+}
+
+
+
+@media screen and (max-width: 1279px) {
+  .genesis-nav-menu#menu-left-menu-all .menu-item,
+  .genesis-nav-menu#menu-right-menu-all .menu-item,
+  .genesis-nav-menu#menu-right-menu-home .menu-item,
+  .genesis-nav-menu#menu-left-menu-home .menu-item {
+    display: none;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .genesis-nav-menu#menu-left-menu-all .menu-item.simple-social-li,
+  .genesis-nav-menu#menu-left-menu-all .menu-item .simple-social-icons,
+  .genesis-nav-menu#menu-right-menu-all .menu-item.simple-social-li,
+  .genesis-nav-menu#menu-right-menu-all .menu-item .simple-social-icons,
+  .genesis-nav-menu#menu-right-menu-home .menu-item.simple-social-li,
+  .genesis-nav-menu#menu-right-menu-home .menu-item .simple-social-icons,
+  .genesis-nav-menu#menu-left-menu-home .menu-item.simple-social-li,
+  .genesis-nav-menu#menu-left-menu-home .menu-item .simple-social-icons {
+    display: block;
+  }
+}
+
+#mobileNavOpen {
+  display: none;
+  position: absolute;
+  color: #FFF;
+  right: 1em;
+  top: 50%;
+  margin-top: -15px;
+  font-size: 2em;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#mobileNavOpen:hover {
+  color: #002b5c;
+}
+@media screen and (max-width: 1279px) {
+  #mobileNavOpen {
+    display: block;
+  }
+}
+
+.logged-in #jPanelMenu-menu {
+  margin-top: 46px;
+}
+#jPanelMenu-menu > li {
+  border-bottom: 2px rgba(11, 11, 63, 0.11) solid;
+}
+#jPanelMenu-menu > li:first-child {
+  border-top: 2px rgba(11, 11, 63, 0.11) solid;
+}
+#jPanelMenu-menu > li > a {
+  font-size: 18px;
+  padding: 0.5em 1em;
+  color: #012b5c;
+  text-transform: uppercase;
+  display: block;
+}
+#jPanelMenu-menu > li > a:hover {
+  color: white;
+  background: #012b5c;
+}
+
+#menu-right-menu.genesis-nav-menu .menu-item {
+  float: left;
+}
+
+#menu-left-menu.genesis-nav-menu .menu-item {
+  float: right;
+}
+
+.genesis-nav-menu li li {
+  margin-left: 0;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .sub-menu a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #002b5c !important;
+ /* background-color: #002b5c;*/
+}
+
+.genesis-nav-menu .current-menu-item > a {
+  color: #002b5c !important;
+/*  background-color: #002b5c;*/
+}
+
+.genesis-nav-menu .current-menu-item.menu-item-44 > a {
+  background: none;
+  color: #002b5c !important;
+}
+
+.genesis-nav-menu > .menu-item > a {
+  text-transform: uppercase;
+}
+
+.genesis-nav-menu .sub-menu {
+  left: -9999px;
+  letter-spacing: 0;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  -ms-transition: opacity .4s ease-in-out;
+  -o-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+  width: 200px;
+  z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+  background-color: #000;
+  padding: 20px;
+  position: relative;
+  width: 200px;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: -56px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+  position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  left: auto;
+  opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+  padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+  padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+  color: #fff;
+  display: inline-block;
+  list-style-type: none;
+  padding: 27px 20px;
+  text-transform: uppercase;
+}
+
+.genesis-nav-menu > .right > a {
+  display: inline;
+  padding: 0;
+}
+
+.genesis-nav-menu > .rss > a {
+  margin-left: 48px;
+}
+
+.genesis-nav-menu > .search {
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+  width: 50%;
+}
+
+aside.header-widget-area {
+  width: 100%;
+  float: none;
+  margin: 0 auto;
+}
+
+section#nav_menu-2 nav ul#menu-left-menu-home li.menu-item {
+  float: right;
+}
+
+section#nav_menu-3 nav ul#menu-right-menu-home li.menu-item {
+  float: left;
+}
+
+#nav_menu-4 {
+  float: left;
+  clear: none;
+  width: 47.5%;
+}
+
+#text-7 {
+  float: left;
+  clear: none;
+  width: 5%;
+}
+
+#nav_menu-5 {
+  float: left;
+  clear: none;
+  width: 47.5%;
+}
+
+body.home.page .wrap {
+  width: 100%;
+  max-width: 100%;
+}
+
+#text-8 {
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/white-transparent-7.png");
+  width: 100%;
+  height: 800px;
+}
+
+#text-8 .widget-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#text-8 img {
+  padding: 125px 0;
+}
+
+header .wrap {
+  height: 70px;
+}
+
+@media screen and (max-width: 1279px) {
+	body.home header .wrap {
+		background: #88bce4;
+	}
+}
+
+#text-2 {
+  margin-bottom: 100px;
+}
+
+#text-2 img {
+	margin-top: 6vh;
+	-webkit-filter: drop-shadow(2px 0px 1px rgba(255, 255, 255, 0.5));
+	max-width: 500px;
+	max-height: 480px;
+}
+
+@media screen and (max-width: 799px) {
+
+	#text-2 img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+@media only screen (max-width: 1440px) and (min-width: 800px) {
+	#text-2 img {
+		max-width: 420px;
+		max-height: 350px;
+	}
+}
+
+@media screen (max-width: 2200px) and (min-width: 1441px) {
+	#text-2 img {
+		max-width: 600px;
+		max-height: 500px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+  #text-2 img {
+    margin-top: 1em;
+  }
+}
+
+#nav_menu-3 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+body.page-id-6 header.entry-header {
+  display: none;
+}
+
+article.post-6 h1 {
+  /*margin-top: 40px;*/
+}
+
+.widget-wrap,
+.maxwidth {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#text-7 .textwidget {
+  margin-top: 0px;
+}
+
+aside.header-widget-area {
+  margin: 0 auto;
+}
+
 
 /*div.logos img {
 	-webkit-filter: grayscale(100%);
@@ -6339,7 +6857,6 @@ div.logos img:hover {
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
   -ms-transition-duration: 0.4s;
-  z-index: 2px;
 }
 
 .blue {
@@ -6387,10 +6904,11 @@ div.logos img:hover {
 #text-7 {
   width: 5%;
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1279px) {
   #text-7 {
     width: auto;
     float: none;
+    display: none;
   }
 }
 
@@ -6402,6 +6920,34 @@ div.gridfx-items.isotope,
 div.gridfx-item.isotope-item {
   overflow: visible !important;
 }
+
+img.jingle {
+	height: 90%;
+	width: 90%;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+body.page-id-6 .entry {
+	margin-bottom: 0px;
+}
+
+
+
+.hashtag-grannysquibbs {
+	border-top: 5px solid #eee;
+	border-bottom: 5px solid #eee;
+	padding: .625em 0px;
+	text-align: center;
+	position: relative;
+}
+
+.hashtag-grannysquibbs p .back {
+	background: #fff;
+	display: inline-block;
+	padding: 0px .625em;
+}
+
 
 /*
 Content Area
@@ -6422,13 +6968,33 @@ Content Area
   overflow: hidden;
   padding: 80px 0 100px;
   text-align: center;
-  height: 100vh;
+ /* height: 100vh;*/
+  background-size: cover !important;
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1024px) and (min-width: 642px) {
   .home-odd.home-section-1 {
     height: 600px;
     background-size: cover !important;
   }
+}
+
+
+@media screen and (max-width: 641px) {
+	.home-odd.home-section-1 {
+		height: 380px;
+		background-size: cover !important;
+		padding: 70px 0 0;
+	}
+	
+	#text-2 {
+		margin-bottom: 0;
+	}
+	
+	.home-section-1 img {
+		width: 288px;
+		max-width: 100%;
+	}
 }
 
 .home-even {
@@ -6600,6 +7166,14 @@ h3.seventy {
 .widthseventy {
   max-width: 70%;
   margin: 0 auto 25px;
+}
+
+@media only screen and (max-width: 768px) {
+	.widthseventy {
+		max-width: 100%;
+		margin: 0 auto 25px;
+		font-size: 22px;
+	}
 }
 
 .space-left {
@@ -6975,6 +7549,43 @@ p.form-submit,
   padding: 24px;
 }
 
+
+div.recipes {
+	/*min-height: 444px;*/
+}
+
+
+.food {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	min-height: 444px;
+	border-radius: 6px;
+}
+
+.food:hover {
+	background-image: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-food-2.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.drinks {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	min-height: 444px;
+	border-radius: 6px;
+}
+
+.drinks:hover {
+	background-image: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-drinks-2.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+
 /*
 Sidebar
 ---------------------------------------------------------------------------------------------------- */
@@ -7075,13 +7686,14 @@ Site Footer
 }
 
 .site-footer .alignleft {
-  width: 35%;
+  width: 30%;
 }
 
 .site-footer .alignright {
   width: 65%;
   position: relative;
   bottom: 1px;
+  margin-right: 15px;
 }
 
 .site-footer a {
@@ -7099,6 +7711,50 @@ Site Footer
 .site-footer i.fa.fa-anchor {
   font-size: 16px;
 }
+
+p.large i.fa.fa-anchor {
+	font-size: 164px;
+}
+
+.boxleft p.large {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 1280px) {
+	
+	.boxleft p.large {
+		display: none;
+	}
+	
+	.homeboxes .boxcontent {
+		bottom: 0;
+		height: 70px;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		padding: 26px 24px;
+	}
+}
+
+@media only screen and (max-width: 789px) {
+	
+	.boxleft p.large {
+		display: none;
+	}
+	
+	.homeboxes:hover .boxcontent {
+		bottom: 0;
+		height: 70px;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		padding: 26px 24px;
+	}
+}
+
+
 
 .site-footer .fa.fa-facebook,
 .site-footer .fa.fa-twitter {
@@ -7136,7 +7792,7 @@ footer {
 }
 
 span.blue {
-  font-weight: strong;
+  font-weight: bold;
   text-transform: uppercase;
   color: #002b5c;
   margin-left: 15px;
@@ -7145,7 +7801,7 @@ span.blue {
 span.one-fifty {
   font-size: 110%;
   position: relative;
-  bottom: 0px;
+  bottom: 0;
 }
 
 footer .alignleft i.fa {
@@ -7156,9 +7812,31 @@ footer .alignleft i.fa-twitter {
   margin-left: 5px;
 }
 
+footer .wrap {
+	max-width: 1080px;
+}
+
+@media only screen and (max-width: 1087px) {
+
+	footer.site-footer div.alignleft,
+	footer.site-footer div.alignright {
+		width: 92%;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	footer.site-footer {
+		padding: 0 20px;
+	}
+
+}
+
+
+
 body.page-id-4 .gallery dd,
 body.page-id-4 .gallery dl dt a img {
-  border: 0px solid #fff;
+  border: 0 solid #fff;
   border: none !important;
   color: #012b5c;
 }
@@ -7273,7 +7951,6 @@ body.parent-pageid-4 header.entry-header {
 
 body.page-id-39 .gform_wrapper {
   overflow: inherit;
-  margin: 10px 0;
   max-width: 65%;
   margin: 0 auto;
 }
@@ -7287,9 +7964,9 @@ body.page-id-39 .gform_wrapper label {
   font-size: 18px;
 }
 
-section#text-15.widget {
+section#text-15 {
   background: url("http://squibbs.wpengine.com/wp-content/uploads/2014/05/1015204_10151740011248530_1581506400_o-1-e1400550892777.jpg");
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   background-color: #fff;
   background-position: center center;
   background-repeat: no-repeat;
@@ -7316,15 +7993,15 @@ section#text-15 h3 {
 }
 
 section#text-16.widget {
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-page-picture-granny-squibbs.jpg");
+  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/fresh-brewed-tea.jpg");
   /*background-attachment: fixed;*/
   background-color: #fff;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  min-height: 355px;
+  min-height: 500px;
   margin-top: 70px;
   margin-bottom: 20px;
   max-height: 500px;
@@ -7537,7 +8214,7 @@ body.home.page footer.site-footer .wrap {
 
 .recipes .food {
   height: 444px;
-  width: 555px;
+  width: 100%;
   background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-food.jpg") center;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -7554,7 +8231,7 @@ body.home.page footer.site-footer .wrap {
 }
 
 .recipes .food:hover {
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-food-2.jpg") center;
+  background-image: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-food-2.jpg") center;
   transition: none;
   background-attachment: inherit;
   background-color: #fff;
@@ -7567,8 +8244,8 @@ body.home.page footer.site-footer .wrap {
 
 .recipes .drinks {
   height: 444px;
-  width: 555px;
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-drinks.jpg") center;
+  width: 100%;
+  background-image: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-drinks.jpg") center;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -7584,7 +8261,7 @@ body.home.page footer.site-footer .wrap {
 }
 
 .recipes .drinks:hover {
-  background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-drinks-2.jpg") center;
+  background-image: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-drinks-2.jpg") center;
   transition: none;
   background-attachment: inherit;
   background-color: #fff;
@@ -7593,6 +8270,19 @@ body.home.page footer.site-footer .wrap {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+	.recipes .food,
+	.recipes .drinks {
+		height: 100%;
+	}
+	
+	.post-2 {
+		margin: 0 15px;
+	}
 }
 
 .soliloquy-container .soliloquy-caption {
@@ -7654,7 +8344,7 @@ Media Queries
   #text-2 img {
     padding-bottom: 0px;
     margin-top: 6vh;
-    width: 25%;
+    width: 35%;
   }
 }
 @media screen and (max-width: 1139px) {
@@ -7774,7 +8464,7 @@ Media Queries
     margin-right: 0;
   }
 
-  .five-sixths,
+/*  .five-sixths,
   .four-sixths,
   .one-fourth,
   .one-half,
@@ -7789,7 +8479,7 @@ Media Queries
     margin: 0;
     width: 100%;
   }
-
+*/
   .pricing-table .one-third:nth-child(3n+1) {
     border-right: 2px solid #000;
   }
@@ -7813,6 +8503,10 @@ Media Queries
   .site-inner,
   .wrap {
     padding: 0 5%;
+  }
+
+  .page-id-5 .site-inner {
+    padding: 0;
   }
 
   header .wrap {
@@ -7857,19 +8551,82 @@ Media Queries
   		}*/
   .home-even,
   .home-odd {
-    padding: 90px 0 100px;
+    padding: 20px 0 70px;
   }
+  
+  
+@media only screen and (max-width: 520px) {
+	.home-even,
+	.home-odd {
+		padding: 20px 0 20px;
+	}
+}
 
   .parallax-home .simple-social-icons ul li {
     margin: 0 20px 20px !important;
   }
+  
+  
+  
+	.home-section-4 .five-sixths,
+	.home-section-4 .four-sixths,
+	.home-section-4 .one-fourth,
+	.home-section-4 .one-half,
+	.home-section-4 .one-sixth,
+	.home-section-4 .one-third,
+	.home-section-4 .pricing-table .one-third,
+	.home-section-4 .three-fourths,
+	.home-section-4 .three-sixths,
+	.home-section-4 .two-fourths,
+	.home-section-4 .two-sixths,
+	.home-section-4 .two-thirds {
+		margin: 0;
+		width: 50%;
+		clear: none;
+	}
+	
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.pricing-table .one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0 0 50px;
+		width: 100%;
+		clear: both;
+	}
+	
+	
+	.logos .first {
+		display: none;
+	}
+	
+	.logos {
+		width: 70%;
+		margin: 0 auto;	
+	}
+	
+	#text-11 .button {
+	
+	}
+  
+  
+  
+  
+  
+  
 }
 @media only screen and (max-width: 480px) {
   .site-header {
     background-color: #8abbe4;
     width: 100%;
     z-index: 999;
-    height: 130px;
     overflow: visible;
   }
 
@@ -7903,7 +8660,6 @@ Media Queries
     width: 100%;
     float: none;
     text-align: center;
-    font-size: 200%;
   }
 
   .home-even,
