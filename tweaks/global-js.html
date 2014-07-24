@@ -39,18 +39,15 @@
 (function animatedBgHomepage($){
 	
 	var $body = $('body');
-	var $background = $('<div id="homepageNavBg"></div>');
 	
-	if($body.hasClass('home')) {
-		$body.prepend($background);
-		
+	if($body.hasClass('home') && $body.width()>=1180) {
+
+		var $background = $('<div id="homepageNavBg"></div>');
+		$('#nav_menu-2, #text-7, #nav_menu-3').clone().appendTo($background);
+		$background.prependTo($body);
+
 		$('.home-section-2').waypoint(function(){
-			if ($body.width()>=1180) {
-				
-				$background
-					.add($('#nav_menu-2, #nav_menu-3, #text-7'))
-					.toggleClass('online');
-			};
+			$background.toggleClass('online');
 		});
 	}
 
@@ -66,7 +63,19 @@
 	var $hiddenNavContent;
 
 	if ($('body').hasClass('home')) {
-		$hiddenNavContent = $('#menu-left-menu-home, #menu-right-menu-home');
+
+		var $temp;
+
+		$hiddenNavContent = $('#menu-left-menu-home').clone().detach();
+		$hiddenNavContent.children('li').each(function(){
+			var $this = $(this);
+			$this.prependTo($this.parent());
+		});
+
+		$temp = $('#menu-right-menu-home').clone().detach();
+		$hiddenNavContent.append($temp.children('li'));
+
+
 	} else {
 		$hiddenNavContent = $('#menu-left-menu-all, #menu-right-menu-all');
 	}
@@ -80,6 +89,7 @@
 		trigger: '#mobileNavOpen',
 		direction: 'right'
 	});
+
 	jPM.on();
 
 })(jQuery);
@@ -98,6 +108,7 @@
 	var $newLi = $rightMenu.find('li').last().clone();
 
 	$newLi
+		.addClass('simple-social-li')
 		.appendTo($rightMenu)
 		.empty()
 		.append($icons);

@@ -5316,9 +5316,14 @@ Widgets
 body.home .site-header .simple-social-icons, body.home #homepageNavBg .simple-social-icons {
   margin-top: 0.95em;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 1279px) {
   body.home .site-header .simple-social-icons,
   body.home #homepageNavBg .simple-social-icons {
+=======
+@media screen and (max-width: 1180px) {
+  body.home .site-header .simple-social-icons, body.home #homepageNavBg .simple-social-icons {
+>>>>>>> FETCH_HEAD
     display: none;
   }
 }
@@ -5342,7 +5347,11 @@ body.home .site-header .widget-area .simple-social-icons ul li a {
   width: 100%;
   text-align: left;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 1279px) {
+=======
+@media screen and (max-width: 1180px) {
+>>>>>>> FETCH_HEAD
   .simple-social-icons .alignleft {
     text-align: left;
     position: absolute;
@@ -5749,6 +5758,7 @@ section#text-15 h3 {
 
 }
 
+<<<<<<< HEAD
 
 
 /*Grid on Home Page EXtraneous Code*/
@@ -5798,6 +5808,39 @@ section#text-15 h3 {
   box-shadow: 1px 1px 2px #e6e6e6;
   cursor: default;
   background: white url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/white_texture.jpg) center center repeat;
+=======
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+/* For Homepage sliding down nav element */
+#homepageNavBg {
+  background: #88bce4;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  /* For Homepage logged in */
+}
+#homepageNavBg.online {
+  top: 0px;
+}
+body.logged-in #homepageNavBg {
+  top: -68px;
+}
+body.logged-in #homepageNavBg.online {
+  top: 32px;
+>>>>>>> FETCH_HEAD
+}
+#homepageNavBg #nav_menu-2, #homepageNavBg #nav_menu-3 {
+  width: 47.5%;
+}
+#homepageNavBg #text-7 {
+  width: 5%;
+  display: block;
 }
 
 .view .mask,
@@ -5825,6 +5868,7 @@ section#text-15 h3 {
   background: rgba(0, 0, 0, 0.8);
   margin: 20px 0 0 0;
 }
+<<<<<<< HEAD
 
 .view p {
   font-family: Georgia, serif;
@@ -5834,6 +5878,17 @@ section#text-15 h3 {
   color: #fff;
   padding: 10px 20px 20px;
   text-align: center;
+=======
+@media screen and (max-width: 1180px) {
+  .genesis-nav-menu#menu-left-menu-all .menu-item, .genesis-nav-menu#menu-right-menu-all .menu-item, .genesis-nav-menu#menu-right-menu-home .menu-item, .genesis-nav-menu#menu-left-menu-home .menu-item {
+    display: none;
+  }
+>>>>>>> FETCH_HEAD
+}
+@media screen and (max-width: 1180px) {
+  .genesis-nav-menu#menu-left-menu-all .menu-item.simple-social-li, .genesis-nav-menu#menu-left-menu-all .menu-item .simple-social-icons, .genesis-nav-menu#menu-right-menu-all .menu-item.simple-social-li, .genesis-nav-menu#menu-right-menu-all .menu-item .simple-social-icons, .genesis-nav-menu#menu-right-menu-home .menu-item.simple-social-li, .genesis-nav-menu#menu-right-menu-home .menu-item .simple-social-icons, .genesis-nav-menu#menu-left-menu-home .menu-item.simple-social-li, .genesis-nav-menu#menu-left-menu-home .menu-item .simple-social-icons {
+    display: block;
+  }
 }
 
 .view a.info {
@@ -6163,12 +6218,18 @@ section#text-15 h3 {
   margin-top: 0;
 }
 
+<<<<<<< HEAD
 .bg-sky .button:hover {
   background-color: #68a7bd;
 }
 
 .bg-sky:hover .module-link {
   background-color: #88c0d4;
+=======
+body.home.page .wrap {
+  width: 100%;
+  max-width: 100%;
+>>>>>>> FETCH_HEAD
 }
 
 .bg-social .button:hover {

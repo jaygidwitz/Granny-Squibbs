@@ -811,11 +811,6 @@ body.home.parallax-home {
 
 	#nav_menu-2, #nav_menu-3 {
 		width: 50%;
-		@include transition(width 1.5s ease-out);
-
-		&.online {
-			width: 47.5%;		
-		}
 	}
 
 	#nav_menu-2 {
@@ -827,22 +822,9 @@ body.home.parallax-home {
 		float: right;
 	}
 
-	section#text-7 {
-		width: 0%;
-		opacity: 0;
-		@include transition(width 1.5s ease-out, opacity 0.5s ease-out);
-
-		&.online {
-			width: 5%;
-			opacity: 1;
-		}
-		
-		a {
-			width: 100%;
-			display: block;
-		}
+	#text-7 {
+		display: none;
 	}
-
 } 
 
 
@@ -1295,7 +1277,7 @@ Widgets
 		display: inline-block;
 	}
 
-	body.home .site-header & {
+	body.home .site-header &, body.home #homepageNavBg & {
 		margin-top: 0.95em;
 
 		@include max-screen($GSnav) {
@@ -1303,7 +1285,7 @@ Widgets
 		}
 	}
 
-	.site-header .widget-area &, #jPanelMenu-menu & {
+	.site-header .widget-area &, #jPanelMenu-menu &, #homepageNavBg & {
 		
 		ul li a,
 		ul li a:hover {
@@ -1319,6 +1301,14 @@ Widgets
 		float: none;
 		width: 100%;
 		text-align: left;
+
+		@include max-screen($GSnav) {
+			text-align: left;
+			position: absolute;
+			margin: 0 auto;
+			left: 10px;
+			top: 17px;
+		}
 	}
 
 	.social-facebook, .social-twitter, .social-instagram {
@@ -1414,7 +1404,7 @@ div.homeboxes {
 .boxleft,
 a .boxleft {
 	background-color: #b2deee;
-	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/gs-map-narragansett-bay-2.jpg) no-repeat center;
+	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/our-story.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1428,7 +1418,7 @@ a .boxleft {
 
 .boxleft:hover {
 	background-color: #68a7bd;
-	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/gs-map-narragansett-bay.jpg) no-repeat center;
+	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/our-story-hover.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1437,7 +1427,16 @@ a .boxleft {
 }
 
 .boxcenter {
-	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/squibbwreck-middle-home.jpg) no-repeat center;
+	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #b2deee;
+}
+
+.boxcenter:hover {
+	background: url(http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/recipes-hover.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1520,12 +1519,12 @@ a .boxleft {
 }
 
 .boxright {
-	background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/grannysquibbs-2.jpg");
+	background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/hashtag-grannysquibbs.jpg");
 	background-color: #b2deee;
 }
 
 .boxright:hover {
-	background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/grannysquibbs-2.jpg");
+	background: url("http://squibbs.wpengine.com/wp-content/themes/squibbs-pd/images/hashtag-grannysquibbs-hover.jpg");
 	transition: none;
 	background-color: #68a7bd;
 }
@@ -1628,22 +1627,36 @@ Site Header
 Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 
-/* For homepage */
+/* For Homepage sliding down nav element */
 #homepageNavBg {
 	background: $lightBlue;
 	position: fixed;
-	top: 0;
+	top: -100px;
 	width: 100%;
-	height: 0px;
-	z-index: 1;
-	@include transition(all 1s ease-in-out);
+	height: 70px;
+	z-index: 1000;
+	@include transition(all 0.5s ease-in-out);
 
 	&.online {
-		height: 70px;
+		top: 0px;
 	}
 
+	/* For Homepage logged in */
 	body.logged-in & {
-		top: 32px;
+		top: -68px;
+
+		&.online {
+			top: 32px;
+		}
+
+	}
+
+	#nav_menu-2, #nav_menu-3 {
+		width: 47.5%;
+	}
+	#text-7 {
+		width: 5%;
+		display: block;
 	}
 }
 
@@ -1669,11 +1682,22 @@ Site Navigation
 		padding: 1.7em 1em;
 	}
 	&#menu-left-menu-all, &#menu-right-menu-all, &#menu-right-menu-home, &#menu-left-menu-home {
-		@include max-screen($GSnav) {
-			display: none;
+
+		.menu-item {
+
+			@include max-screen($GSnav) {
+				display: none;
+			}
+
+			&.simple-social-li, .simple-social-icons {
+				@include max-screen($GSnav) {
+					display: block;				
+				}
+			}	
 		}
 	}
 }
+
 #mobileNavOpen {
 	display: none;
 	position: absolute;
@@ -1853,12 +1877,6 @@ section#nav_menu-3 nav ul#menu-right-menu-home li.menu-item {
 }
 
 body.home.page {
-
-	.site-header {
-		@include max-screen($GSnav){
-			height: 70px;
-		}
-	}
 
 	.wrap {
 		width: 100%;
@@ -2532,6 +2550,7 @@ div.logos img:hover {
 	@include max-screen($GSnav){
 		width: auto;
 		float: none;
+		display: none;
 	}
 }
 
@@ -4037,7 +4056,6 @@ Media Queries
 			background-color: #8abbe4;
 			width: 100%;
 			z-index: 999;
-			height: 130px;
 			overflow: visible;
 		}
 
