@@ -51,6 +51,27 @@
 
 })(jQuery);
 
+(function moveSocialIcons($){
+
+	var $rightMenu = $('#menu-right-menu-all, #menu-right-menu-home');
+	var $icons = $('#simple-social-icons-2');
+
+	if (!$('body').hasClass('home')) {
+		$icons.addClass('not-home');
+	}
+
+	$icons.find('a').attr('target','_blank');
+
+	var $newLi = $rightMenu.find('li').last().clone();
+
+	$newLi
+		.addClass('simple-social-li')
+		.appendTo($rightMenu)
+		.empty()
+		.append($icons);
+
+})(jQuery);
+
 (function sideMenu($){
 
 	// Add mobile icon
@@ -89,27 +110,5 @@
 	});
 
 	jPM.on();
-
-})(jQuery);
-
-(function moveSocialIcons($){
-
-	var $rightMenu = $('#menu-right-menu-all, #menu-right-menu-home');
-	var $icons = $('#simple-social-icons-2');
-
-	if (!$('body').hasClass('home')) {
-		$icons.addClass('not-home');
-	}
-
-	$icons.find('a').attr('target','_blank');
-
-	var $newLi = $rightMenu.find('li').last().clone();
-
-	$newLi
-		.addClass('simple-social-li')
-		.appendTo($rightMenu)
-		.empty()
-		.append($icons);
-
 
 })(jQuery);
