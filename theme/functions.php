@@ -34,7 +34,7 @@ function parallax_enqueue_scripts_styles() {
 	wp_enqueue_script( 'retinajs', get_bloginfo( 'stylesheet_directory' ) . '/js/retina.min.js', array( 'jquery' ), '1.3.0', 'in_footer' );
 	wp_enqueue_script( 'jpanelmenu', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.jpanelmenu.min.js', array( 'jquery' ), '1.3.0', 'in_footer' );
 	wp_enqueue_script( 'prada', get_bloginfo( 'stylesheet_directory' ) . '/js/prada.js', array( 'jquery' ), '1.3.0', 'in_footer' );
-
+	wp_enqueue_script( 'footerstick', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.footerstick.js', array( 'jquery' ), '1.3.0' );
 
 
 
@@ -199,7 +199,7 @@ add_action( 'wp_enqueue_scripts', 'prefix_enqueue_awesome' );
  * @author FAT Media
  */
 function prefix_enqueue_awesome() {
-	wp_enqueue_style( 'prefix-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', array(), '4.0.3' );
+	wp_enqueue_style( 'prefix-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array(), '4.1.0' );
 }
 
 
@@ -306,5 +306,14 @@ function child_load_portfolio() {
        				wp_enqueue_script( 'parallax-script2', get_bloginfo( 'stylesheet_directory' ) . '/js/parallax2.js', array( 'jquery' ), '1.0.0' );
     }
 }
-
-
+/*
+//* Sticky Footer Functions
+add_action( 'genesis_before_header', 'stickyfoot_wrap_begin');
+function stickyfoot_wrap_begin() {
+	echo '<div class="page-wrap">';
+}
+ 
+add_action( 'genesis_before_footer', 'stickyfoot_wrap_end');
+function stickyfoot_wrap_end() {
+	echo '</div><!-- page-wrap -->';
+}*/

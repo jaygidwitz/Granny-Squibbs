@@ -1,3 +1,43 @@
+/*
+
+(function Fooooooooter($){
+// Window load event used just in case window height is dependant upon images
+$(window).bind("load", function() { 
+       
+       var footerHeight = 0,
+           footerTop = 0,
+           $footer = $(".site-footer");
+           
+       positionFooter();
+       
+       function positionFooter() {
+       
+                footerHeight = $footer.height();
+                footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";
+       
+               if ( ($(document.body).height()+footerHeight) < $(window).height()) {
+                   $footer.css({
+                        position: "absolute"
+                   }).animate({
+                        top: footerTop
+                   })
+               } else {
+                   $footer.css({
+                        position: "static"
+                   })
+               }
+               
+       }
+
+       $(window)
+               .scroll(positionFooter)
+               .resize(positionFooter)
+               
+});
+
+})(jQuery);
+*/
+/*
 (function stickyFooter($){
 
 	var stickyClass = 'sticky-bottom';
@@ -32,13 +72,13 @@
 		// On Resize
 		$(window).resize(stickToBottom);
 	}
-})(jQuery);
+})(jQuery);*/
 
 (function animatedBgHomepage($){
 	
 	var $body = $('body');
 	
-	if($body.hasClass('home') && $body.width()>=1180) {
+	if($body.hasClass('home') && $body.width()>=1025) {
 
 		var $background = $('<div id="homepageNavBg"></div>');
 		$('#nav_menu-2, #text-7, #nav_menu-3').clone().appendTo($background);
@@ -48,6 +88,27 @@
 			$background.toggleClass('online');
 		});
 	}
+
+})(jQuery);
+
+(function moveSocialIcons($){
+
+	var $rightMenu = $('#menu-right-menu-all, #menu-right-menu-home');
+	var $icons = $('#simple-social-icons-2');
+
+	if (!$('body').hasClass('home')) {
+		$icons.addClass('not-home');
+	}
+
+	$icons.find('a').attr('target','_blank');
+
+	var $newLi = $rightMenu.find('li').last().clone();
+
+	$newLi
+		.addClass('simple-social-li')
+		.appendTo($rightMenu)
+		.empty()
+		.append($icons);
 
 })(jQuery);
 
@@ -89,27 +150,5 @@
 	});
 
 	jPM.on();
-
-})(jQuery);
-
-(function moveSocialIcons($){
-
-	var $rightMenu = $('#menu-right-menu-all, #menu-right-menu-home');
-	var $icons = $('#simple-social-icons-2');
-
-	if (!$('body').hasClass('home')) {
-		$icons.addClass('not-home');
-	}
-
-	$icons.find('a').attr('target','_blank');
-
-	var $newLi = $rightMenu.find('li').last().clone();
-
-	$newLi
-		.addClass('simple-social-li')
-		.appendTo($rightMenu)
-		.empty()
-		.append($icons);
-
 
 })(jQuery);
