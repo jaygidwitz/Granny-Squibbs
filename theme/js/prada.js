@@ -1,29 +1,23 @@
 (function stickyFooter($){
 
-	var stickyClass = 'sticky-bottom';
-
 	function stickToBottom () {
 
-		var $siteFooter   = $('.site-footer');
-		var $beforeFooter = $('.before-footer');
-		var $both         = $siteFooter.add($beforeFooter);
+		var $footer = $('.foot');
+
+		// If the body is smaller than the window
+		// stick the footer to the bottom
 
 		if($(window).height()>$('body').height()) {
 
-			if(!$both.hasClass(stickyClass)) {
-				$both.addClass(stickyClass);
-			}
+			$footer.css({
+				'position':'fixed',
+				'bottom': 0,
+				'width': '100%'
+			});
 			
-			$beforeFooter.css('bottom', $siteFooter.outerHeight());
-			$siteFooter.css('bottom', 0);
-
 		} else {
-
-			$both.css('bottom','');
-			$both.removeClass(stickyClass);
-
+			$footer.removeAttr('style');
 		}
-
 	}
 
 	// On DOM Ready on pages without Envira Gallery
@@ -62,9 +56,8 @@
 
 	$icons.find('a').attr('target','_blank');
 
-	var $newLi = $rightMenu.find('li').last().clone();
-
-	$newLi
+	$rightMenu.find('li').last()
+		.clone()
 		.addClass('simple-social-li')
 		.appendTo($rightMenu)
 		.empty()
